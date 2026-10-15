@@ -84,7 +84,11 @@ svg {
 button,
 a,
 .image-wrap,
-.service-card {
+.collection-card,
+.product-card,
+.service-card,
+.testimonial,
+.journal-card {
   transition:
     background-color .25s,
     color .25s,
@@ -755,13 +759,6 @@ a.image-wrap:focus-visible img {
   border-radius: 12px;
 }
 
-.service-card:hover,
-.service-card:focus-within {
-  transform: translateY(-5px);
-  border-color: var(--secondary);
-  box-shadow: var(--shadow);
-}
-
 .service-icon {
   width: 38px;
   height: 38px;
@@ -840,25 +837,6 @@ figcaption span {
 .journal-card .text-link {
   margin-block-start: auto;
   align-self: flex-start;
-}
-
-/* Final CTA */
-
-.final-section {
-  background: var(--bg-alt);
-  padding-block: 60px;
-  border-block-start: 1px solid var(--border);
-}
-
-.final-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  align-items: center;
-  gap: 65px;
-}
-
-.final-copy h2 {
-  font-size: clamp(2.6rem, 3.8vw, 4rem);
 }
 
 /* Image fallback */
@@ -1007,6 +985,21 @@ figcaption span {
 .reveal-ready.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.collection-card:hover,
+.collection-card:focus-within,
+.product-card:hover,
+.product-card:focus-within,
+.service-card:hover,
+.service-card:focus-within,
+.testimonial:hover,
+.testimonial:focus-within,
+.journal-card:hover,
+.journal-card:focus-within {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+  box-shadow: var(--shadow);
 }
 
 /* RTL */
@@ -1513,57 +1506,6 @@ figcaption span {
   }
 }
 
-/* Compact rounded CTA with side spacing */
-
-.final-section {
-  width: min(1200px, calc(100% - 64px));
-  margin: 32px auto 48px;
-  padding: 36px clamp(24px, 4vw, 56px);
-  min-height: 0;
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  background:
-    linear-gradient(
-      135deg,
-      rgb(217 155 168 / 16%),
-      transparent
-    ),
-    var(--bg-alt);
-}
-
-.final-grid {
-  display: block;
-  width: 100%;
-  max-width: none;
-  padding: 0;
-}
-
-.final-copy {
-  max-width: 920px;
-  margin-inline: auto;
-  text-align: center;
-}
-
-.final-copy h2 {
-  font-size: clamp(1.9rem, 3vw, 3rem);
-  line-height: 1.12;
-  margin-block: 10px 12px;
-}
-
-.final-copy > p:not(.eyebrow) {
-  max-width: 660px;
-  margin: 0 auto 18px;
-}
-
-.final-copy .eyebrow {
-  margin: 0;
-}
-
-.final-copy .button-row {
-  justify-content: center;
-  margin-block-start: 0;
-}
-
 @media (max-width: 760px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1607,12 +1549,6 @@ figcaption span {
     display: none;
   }
 
-  .final-section {
-    width: calc(100% - 32px);
-    padding: 28px 20px;
-    margin-block: 24px 32px;
-    border-radius: 22px;
-  }
 }
 
 @media (min-width: 761px) and (max-height: 700px) {

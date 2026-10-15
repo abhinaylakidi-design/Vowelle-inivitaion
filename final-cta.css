@@ -1,0 +1,129 @@
+.final-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(1200px, calc(100% - 64px));
+  margin: 32px auto 48px;
+  padding: 36px clamp(24px, 4vw, 56px);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background:
+    radial-gradient(ellipse at 82% 18%, rgb(217 155 168 / 24%), transparent 42%),
+    linear-gradient(120deg, rgb(217 155 168 / 12%), transparent 52%, rgb(217 155 168 / 8%)),
+    var(--bg-alt);
+  color: var(--text);
+  box-shadow: 0 12px 34px rgb(116 44 69 / 7%);
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+
+.final-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -40%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 50%, rgb(217 155 168 / 16%), transparent 58%);
+  animation: final-cta-glow 10s ease-in-out infinite alternate;
+}
+
+.final-grid {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.final-copy {
+  max-width: 920px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.final-copy h2 {
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  line-height: 1.12;
+  margin-block: 10px 12px;
+}
+
+.final-copy > p:not(.eyebrow) {
+  max-width: 660px;
+  margin: 0 auto 18px;
+}
+
+.final-copy .eyebrow {
+  margin: 0;
+  color: var(--accent-text);
+}
+
+.final-copy .button-row {
+  justify-content: center;
+  margin-block-start: 0;
+}
+
+.final-copy .button.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.final-copy .button.secondary {
+  border-color: var(--accent-text);
+  color: var(--accent-text);
+  background: transparent;
+}
+
+.final-copy .button {
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease,
+    color .25s ease, border-color .25s ease;
+}
+
+@media (hover: hover) {
+  .final-section:hover {
+    transform: translateY(-4px);
+    border-color: var(--secondary);
+    box-shadow: 0 22px 54px rgb(116 44 69 / 16%);
+  }
+
+  .final-section:hover::before {
+    animation-duration: 5s;
+  }
+
+  .final-copy .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgb(116 44 69 / 20%);
+  }
+}
+
+.final-copy .button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@keyframes final-cta-glow {
+  from {
+    transform: translate3d(-3%, -2%, 0) scale(.96);
+  }
+
+  to {
+    transform: translate3d(3%, 2%, 0) scale(1.04);
+  }
+}
+
+@media (max-width: 760px) {
+  .final-section {
+    width: calc(100% - 32px);
+    padding: 28px 20px;
+    margin-block: 24px 32px;
+    border-radius: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .final-section,
+  .final-section::before,
+  .final-copy .button {
+    animation: none;
+    transition: none;
+  }
+}

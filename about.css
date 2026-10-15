@@ -1618,7 +1618,16 @@ figcaption span {
 
 .process-step {
     border-block-start: 1px solid var(--secondary);
-    padding-block-start: 28px
+    padding-block-start: 28px;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease
+}
+
+.process-step:hover,
+.process-step:focus-within {
+    transform: translateY(-6px);
+    border-block-start-color: var(--primary);
+    box-shadow: var(--shadow);
+    transition-delay: 0s
 }
 
 .process-step>span {
@@ -1631,7 +1640,28 @@ figcaption span {
     color: var(--accent-text);
     font-size: .8rem;
     margin-block-end: 24px;
-    background: var(--card)
+    background: var(--card);
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease, transform .3s ease
+}
+
+.process-step:hover>span,
+.process-step:focus-within>span {
+    color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: scale(1.08)
+}
+
+.process-step.reveal-ready.is-visible:nth-child(2) {
+    transition-delay: .12s
+}
+
+.process-step.reveal-ready.is-visible:nth-child(3) {
+    transition-delay: .24s
+}
+
+.process-step.reveal-ready.is-visible:nth-child(4) {
+    transition-delay: .36s
 }
 
 .process-step h3 {

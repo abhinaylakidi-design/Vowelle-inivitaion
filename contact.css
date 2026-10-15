@@ -1461,6 +1461,11 @@ figcaption span {
     box-shadow: var(--shadow)
 }
 
+.collage-main img,
+.collage-small img {
+    transition: transform .7s ease
+}
+
 .collage-small {
     position: absolute;
     inset-inline-end: 0;
@@ -1504,6 +1509,27 @@ figcaption span {
     color: var(--accent-text);
     opacity: .05;
     pointer-events: none
+}
+
+@media(hover:hover) {
+    .collage-main:hover {
+        transform: translateY(-6px) rotate(-5deg);
+        box-shadow: 0 24px 60px rgb(0 0 0 / 16%)
+    }
+
+    .collage-small:hover {
+        transform: translateY(-6px) rotate(6deg);
+        box-shadow: 0 24px 60px rgb(0 0 0 / 16%)
+    }
+
+    .collage-main:hover img,
+    .collage-small:hover img {
+        transform: scale(1.05)
+    }
+
+    .collage-note:hover {
+        box-shadow: 0 18px 45px rgb(0 0 0 / 14%)
+    }
 }
 
 .contact-three {
@@ -1747,13 +1773,20 @@ figcaption span {
     margin: 8px 0 0
 }
 
-.contact-faq details {
-    border-block-end: 1px solid var(--border);
-    padding: 20px 0
+.contact-faq {
+    display: grid;
+    gap: 12px;
+    counter-reset: faq-item
 }
 
-.contact-faq details:first-child {
-    border-block-start: 1px solid var(--border)
+.contact-faq details {
+    counter-increment: faq-item;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--card);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 3%);
+    transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease
 }
 
 .contact-faq summary {
@@ -1762,30 +1795,70 @@ figcaption span {
     list-style: none;
     font-size: .92rem;
     font-weight: 600;
-    padding-inline-end: 35px
+    padding: 20px 60px 20px 64px
 }
 
 .contact-faq summary::-webkit-details-marker {
     display: none
 }
 
+.contact-faq summary::before {
+    content: counter(faq-item, decimal-leading-zero);
+    position: absolute;
+    inset-inline-start: 22px;
+    inset-block-start: 50%;
+    color: var(--accent-text);
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    transform: translateY(-50%)
+}
+
 .contact-faq summary::after {
     content: '+';
     position: absolute;
-    inset-inline-end: 0;
+    inset-inline-end: 18px;
+    inset-block-start: 50%;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
     color: var(--accent-text);
-    font-size: 1.4rem;
-    line-height: 1
+    font-size: 1.2rem;
+    line-height: 1;
+    transform: translateY(-50%);
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease, transform .25s ease
 }
 
 .contact-faq details[open] summary::after {
-    content: '−'
+    content: '+';
+    color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-50%) rotate(45deg)
+}
+
+.contact-faq details[open] {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow)
 }
 
 .contact-faq details p {
     font-size: .85rem;
-    margin-block-end: 0;
+    margin: 0;
+    padding: 0 60px 22px 64px;
+    color: var(--muted);
     animation: contact-enter .35s ease
+}
+
+@media(hover:hover) {
+    .contact-faq details:hover {
+        transform: translateY(-2px);
+        border-color: var(--secondary);
+        box-shadow: var(--shadow)
+    }
 }
 
 .contact-final {
