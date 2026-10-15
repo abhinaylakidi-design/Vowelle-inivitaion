@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal wedding stationery design services by Vowelle.">
+  <meta name="theme-color" content="#742C45">
+  <title>Vowelle — Design Services</title>
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="service.css">
+  <script src="service.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- SVG ICONS -->
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 64 64">
+      <rect x="7" y="24" width="50" height="32" rx="5"
+        fill="none" stroke="currentColor" stroke-width="2.3"/>
+      <path d="m8 27 24 17 24-17M8 53l17-15m31 15L39 38"
+        fill="none" stroke="currentColor" stroke-width="2.3"/>
+      <path d="M32 25V8m0 11C18 19 19 5 32 12m0 4C46 16 45 3 32 9"
+        fill="none" stroke="var(--secondary)" stroke-width="2.3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="arrow" viewBox="0 0 24 24">
+      <path d="M4 12h16m-6-6 6 6-6 6"/>
+    </symbol>
+
+    <symbol id="chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+
+    <symbol id="sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>
+    </symbol>
+
+    <symbol id="moon" viewBox="0 0 24 24">
+      <path d="M20.5 13A9 9 0 0 1 11 3.5 9 9 0 1 0 20.5 13Z"/>
+    </symbol>
+
+    <symbol id="direction" viewBox="0 0 24 24">
+      <path d="M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4"/>
+    </symbol>
+
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </symbol>
+
+    <symbol id="pen" viewBox="0 0 24 24">
+      <path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-4-4L5 15l-1 5Z"/>
+    </symbol>
+
+    <symbol id="suite" viewBox="0 0 24 24">
+      <rect x="3" y="7" width="14" height="14" rx="2"/>
+      <path d="M7 7V3h14v14h-4M7 12h6M7 16h6"/>
+    </symbol>
+
+    <symbol id="phone" viewBox="0 0 24 24">
+      <rect x="6" y="2" width="12" height="20" rx="3"/>
+      <path d="M10 5h4M11 18h2"/>
+    </symbol>
+
+    <symbol id="print" viewBox="0 0 24 24">
+      <path d="M6 9V3h12v6M6 17H3V9h18v8h-3"/>
+      <rect x="6" y="14" width="12" height="7"/>
+      <path d="M17 11h1"/>
+    </symbol>
+
+    <symbol id="mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="m3 6 9 7 9-7"/>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="pinterest" viewBox="0 0 24 24">
+      <path d="M9 21l3-12m-2 7c-1-2-2-4-1-7 1-4 7-4 8-1 2 5-3 10-5 6M6 16C0 9 6 2 12 2c6 0 10 4 10 10s-4 10-10 10"/>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path d="M14 22v-9h3l.5-4H14V6.5c0-1 .5-1.5 1.5-1.5H18V1.5L15 1c-3 0-5 2-5 5v3H7v4h3v9"
+        fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="whatsapp" viewBox="0 0 24 24">
+      <path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3 20.3l1.3-4.7A8.5 8.5 0 1 1 20.5 11.6Z"
+        fill="none" stroke="currentColor" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.3 7.3c-.3 0-.9.5-.9 1.4 0 2.5 3.4 6 6 6.6.9.2 1.8-.3 2.1-1 .1-.3.1-.5-.2-.7l-1.6-.8c-.3-.1-.4-.1-.6.2l-.6.7c-.2.2-.4.2-.7.1-1-.4-2.2-1.5-2.6-2.3-.1-.3-.1-.4.1-.6l.5-.6c.2-.2.2-.4.1-.6l-.7-1.9c-.2-.4-.5-.5-.9-.5Z"
+        fill="currentColor" stroke="none"/>
+    </symbol>
+  </svg>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="Vowelle home">
+        <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <strong>Vowelle<span>.</span></strong>
+          <small>Your Story, Beautifully Invited.</small>
+        </span>
+      </a>
+
+      <nav class="navigation" id="navigation" aria-label="Main navigation">
+        <div class="home-group">
+          <a class="nav-link" href="index.html">Home</a>
+
+          <button class="dropdown-toggle" id="homeToggle" type="button"
+            aria-label="Open Home pages" aria-expanded="false"
+            aria-controls="homeDropdown">
+            <svg class="icon" aria-hidden="true">
+              <use href="#chevron"/>
+            </svg>
+          </button>
+
+          <div class="home-dropdown" id="homeDropdown" hidden>
+            <a href="index.html">Home 1 — Classic</a>
+            <a href="home2.html">
+              Home 2 — Premium
+              <span class="badge">PREMIUM</span>
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link active" aria-current="page" href="service.html">Services</a>
+        <a class="nav-link" href="custom-design.html">Custom Design</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <a class="button primary mobile-nav-cta" href="start-design.html">
+          Start Your Design
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" type="button"
+          aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon" aria-hidden="true">
+            <use id="themeIcon" href="#moon"/>
+          </svg>
+        </button>
+
+        <button class="icon-button" id="directionToggle" type="button"
+          aria-label="Switch to right-to-left layout"
+          aria-pressed="false" title="LTR">
+          <svg class="icon" aria-hidden="true">
+            <use href="#direction"/>
+          </svg>
+        </button>
+
+        <a class="button primary header-cta" href="start-design.html">
+          Start Your Design
+        </a>
+
+        <button class="icon-button mobile-toggle" id="menuToggle" type="button"
+          aria-label="Open navigation" aria-expanded="false"
+          aria-controls="navigation">
+          <svg class="icon" aria-hidden="true">
+            <use href="#menu"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- UPDATED HERO -->
+    <section class="studio-hero" aria-labelledby="serviceHeroTitle">
+      <img
+        class="studio-hero-background"
+        src="./images/wed card.jpg"
+        alt=""
+        aria-hidden="true"
+        fetchpriority="high"
+        decoding="async"
+      >
+
+      <div class="container studio-hero-center">
+        <div class="studio-hero-content">
+          <span class="badge">THE VOWELLE STUDIO</span>
+
+          <p class="eyebrow">
+            Personal details. Lasting impressions.
+          </p>
+
+          <h1 id="serviceHeroTitle">
+            Considered design.<br>
+            <em>Unforgettable beginnings.</em>
+          </h1>
+
+          <p class="lead">
+            From your first invitation to your final thank-you,
+            discover thoughtful design services for every chapter
+            of your celebration.
+          </p>
+
+          <div class="button-row">
+            <a class="button primary" href="contact.html">
+              Let’s Talk
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button secondary" href="#services">
+              Explore Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading services-heading reveal">
+          <p class="eyebrow">✦ Made around you</p>
+          <h2>Six ways to tell <em>your story.</em></h2>
+          <p>Individual services. One beautifully connected celebration.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/11503480/pexels-photo-11503480.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Bespoke Wedding Invitations"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <div class="service-card-copy">
+              <div class="card-top">
+                <span class="card-number">01 / DESIGN SERVICE</span>
+                <span class="badge">SIGNATURE</span>
+              </div>
+              <h3>Bespoke Wedding Invitations</h3>
+              <p>
+                A personal invitation suite, composed around your love
+                story, your venue and the feeling of your celebration.
+              </p>
+              <a class="text-link" href="service%20detail.html?service=bespoke-invitations">
+                View Service <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/29821867/pexels-photo-29821867.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Digital Invitations"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <div class="service-card-copy">
+              <div class="card-top">
+                <span class="card-number">02 / DESIGN SERVICE</span>
+                <span class="badge">DIGITAL</span>
+              </div>
+              <h3>Digital Invitations</h3>
+              <p>
+                Thoughtful screen-ready announcements that bring your
+                wedding story to every guest, wherever they are available.
+              </p>
+              <a class="text-link" href="service%20detail.html?service=digital-invitations">
+                View Service <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/29395419/pexels-photo-29395419.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for On-the-Day Stationery"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <div class="service-card-copy">
+              <div class="card-top">
+                <span class="card-number">03 / DESIGN SERVICE</span>
+                <span class="badge">COORDINATED</span>
+              </div>
+              <h3>On-the-Day Stationery</h3>
+              <p>
+                Menus, place cards, ceremony programmes and signage
+                that bring a single beautiful thread to your wedding day.
+              </p>
+              <a class="text-link" href="service%20detail.html?service=day-of-stationery">
+                View Service <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/10633532/pexels-photo-10633532.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Calligraphy &amp; Monograms"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <div class="service-card-copy">
+              <div class="card-top">
+                <span class="card-number">04 / DESIGN SERVICE</span>
+                <span class="badge">PERSONALISED</span>
+              </div>
+              <h3>Calligraphy &amp; Monograms</h3>
+              <p>
+                Expressive lettering and an original couple’s monogram,
+                created to become the signature of your celebration.
+              </p>
+              <a class="text-link" href="service%20detail.html?service=calligraphy-monograms">
+                View Service <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/13106764/pexels-photo-13106764.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Print &amp; Finishing Consultation"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <div class="service-card-copy">
+              <div class="card-top">
+                <span class="card-number">05 / DESIGN SERVICE</span>
+                <span class="badge">CRAFT</span>
+              </div>
+              <h3>Print &amp; Finishing Consultation</h3>
+              <p>
+                Expert design guidance for papers, print processes
+                and finishing details that give your stationery
+                its tactile character.
+              </p>
+              <a class="text-link" href="service%20detail.html?service=print-finishing">
+                View Service <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/11503488/pexels-photo-11503488.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Thank-You &amp; Keepsake Design"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <div class="service-card-copy">
+              <div class="card-top">
+                <span class="card-number">06 / DESIGN SERVICE</span>
+                <span class="badge">KEEPSAKES</span>
+              </div>
+              <h3>Thank-You &amp; Keepsake Design</h3>
+              <p>
+                Personal thank-you cards and meaningful paper keepsakes
+                that hold onto the feeling of your wedding day.
+              </p>
+              <a class="text-link" href="service%20detail.html?service=thank-you-keepsakes">
+                View Service <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INSPIRATION GALLERY -->
+    <section class="section soft-section">
+      <div class="container">
+        <div class="section-heading works-heading reveal">
+          <p class="eyebrow">✦ The work, the feeling</p>
+          <h2>Paper with <em>personality.</em></h2>
+          <p>
+            A curated inspiration gallery for the details
+            we can create together.
+          </p>
+        </div>
+
+        <div class="works-grid">
+          <figure class="work-item reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/11503480/pexels-photo-11503480.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Bespoke Wedding Invitations"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <figcaption>
+              <span>01</span> Your first impression
+            </figcaption>
+          </figure>
+
+          <figure class="work-item reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/29821867/pexels-photo-29821867.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Digital Invitations"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <figcaption>
+              <span>02</span> Beautifully shared
+            </figcaption>
+          </figure>
+
+          <figure class="work-item reveal">
+            <div class="image-wrap">
+              <img
+                src="./images/wed card 1.jpg"
+                alt="Wedding stationery inspiration for On-the-Day Stationery"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <figcaption>
+              <span>03</span> A celebration in harmony
+            </figcaption>
+          </figure>
+
+          <figure class="work-item reveal">
+            <div class="image-wrap">
+              <img
+                src="https://images.pexels.com/photos/10633532/pexels-photo-10633532.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+                alt="Wedding stationery inspiration for Calligraphy &amp; Monograms"
+                width="900" height="1100" loading="lazy">
+            </div>
+            <figcaption>
+              <span>04</span> A mark of your own
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">✦ A little clarity</p>
+          <h2>Before we <em>begin.</em></h2>
+          <p>
+            Have another question? Our studio is a conversation away.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>
+              Can I book just one service?
+              <span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Yes. Choose a single service or combine several
+              into a coordinated design brief.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              How does the design process work?
+              <span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              We start with a consultation, agree a scope and quote,
+              create concepts, refine your chosen direction
+              and prepare final files.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Can you match my wedding theme?
+              <span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Yes. Share your colours, venue, inspiration and cultural
+              details so we can create a coherent visual direction.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Are the gallery photographs completed Vowelle projects?
+              <span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              These are reference photographs used for this website
+              template. Replace them with approved studio portfolio
+              images before publication.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-section" aria-labelledby="finalTitle">
+      <div class="container final-grid">
+        <div class="final-copy reveal">
+          <p class="eyebrow">✦ Your next beautiful chapter</p>
+          <h2 id="finalTitle">
+            Let’s make it <em>beautifully yours.</em>
+          </h2>
+          <p>
+            Tell us about your celebration.
+            We’ll help you find the right starting point.
+          </p>
+
+          <div class="button-row">
+            <a class="button primary" data-consult href="contact.html">
+              Book a Consultation ↗
+            </a>
+            <a class="button secondary" href="custom-design.html">
+              Start Your Design
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Vowelle home">
+          <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+          <span class="brand-copy">
+            <strong>Vowelle<span>.</span></strong>
+            <small>Your Story, Beautifully Invited.</small>
+          </span>
+        </a>
+
+        <p>
+          Personal wedding invitations and coordinated stationery,
+          thoughtfully composed for your beautiful beginning.
+        </p>
+
+        <div class="social-links" aria-label="Social links">
+          <a class="social-link" href="#socialNotice"
+            data-url="" data-name="Instagram"
+            aria-label="Instagram — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#instagram"/>
+            </svg>
+          </a>
+
+          <a class="social-link" href="#socialNotice"
+            data-url="" data-name="Pinterest"
+            aria-label="Pinterest — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#pinterest"/>
+            </svg>
+          </a>
+
+          <a class="social-link" href="#socialNotice"
+            data-url="" data-name="Facebook"
+            aria-label="Facebook — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#facebook"/>
+            </svg>
+          </a>
+
+          <a class="social-link" href="#socialNotice"
+            data-url="" data-name="WhatsApp"
+            aria-label="WhatsApp — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#whatsapp"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Vowelle</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="service.html">Design Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Your Celebration</h3>
+        <ul class="footer-links">
+          <li><a href="custom-design.html">Custom Design</a></li>
+          <li><a href="start-design.html">Start Your Design</a></li>
+          <li><a href="home2.html">Home 2 — Premium</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+        <p class="placeholder-note">
+          Placeholder studio details — replace before publishing.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use href="#mail"/>
+            </svg>
+            <a href="mailto:hello@vowelle.example">
+              hello@vowelle.example
+            </a>
+          </li>
+
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use href="#phone"/>
+            </svg>
+            <span>Phone: add your studio number</span>
+          </li>
+
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use href="#suite"/>
+            </svg>
+            <span>Address: add your studio location</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="year">2026</span> Vowelle. All rights reserved.
+      </p>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <p class="sr-only" id="socialNotice" role="status"></p>
+</body>
+</html>

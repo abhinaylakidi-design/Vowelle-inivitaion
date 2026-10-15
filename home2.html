@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Vowelle's premium wedding invitations and personalized stationery collections.">
+  <meta name="theme-color" content="#742C45">
+  <title>Vowelle — Premium Wedding Stationery</title>
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="home2.css">
+  <script src="home2.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- SVG LOGO AND ICONS -->
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 64 64">
+      <rect x="7" y="24" width="50" height="32" rx="5"
+        fill="none" stroke="currentColor" stroke-width="2.3"/>
+      <path d="m8 27 24 17 24-17M8 53l17-15m31 15L39 38"
+        fill="none" stroke="currentColor" stroke-width="2.3"/>
+      <path d="M32 25V8m0 11C18 19 19 5 32 12m0 4C46 16 45 3 32 9"
+        fill="none" stroke="var(--secondary)" stroke-width="2.3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+
+    <symbol id="sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>
+    </symbol>
+
+    <symbol id="moon" viewBox="0 0 24 24">
+      <path d="M20.5 13A9 9 0 0 1 11 3.5 9 9 0 1 0 20.5 13Z"/>
+    </symbol>
+
+    <symbol id="direction" viewBox="0 0 24 24">
+      <path d="M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4"/>
+    </symbol>
+
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </symbol>
+
+    <symbol id="pen" viewBox="0 0 24 24">
+      <path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-4-4L5 15l-1 5Z"/>
+    </symbol>
+
+    <symbol id="suite" viewBox="0 0 24 24">
+      <rect x="3" y="7" width="14" height="14" rx="2"/>
+      <path d="M7 7V3h14v14h-4M7 12h6M7 16h6"/>
+    </symbol>
+
+    <symbol id="phone" viewBox="0 0 24 24">
+      <rect x="6" y="2" width="12" height="20" rx="3"/>
+      <path d="M10 5h4M11 18h2"/>
+    </symbol>
+
+    <symbol id="print" viewBox="0 0 24 24">
+      <path d="M6 9V3h12v6M6 17H3V9h18v8h-3"/>
+      <rect x="6" y="14" width="12" height="7"/>
+      <path d="M17 11h1"/>
+    </symbol>
+
+    <symbol id="mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="m3 6 9 7 9-7"/>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="pinterest" viewBox="0 0 24 24">
+      <path d="M9 21l3-12m-2 7c-1-2-2-4-1-7 1-4 7-4 8-1 2 5-3 10-5 6M6 16C0 9 6 2 12 2c6 0 10 4 10 10s-4 10-10 10"/>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path d="M14 22v-9h3l.5-4H14V6.5c0-1 .5-1.5 1.5-1.5H18V1.5L15 1c-3 0-5 2-5 5v3H7v4h3v9"
+        fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="whatsapp" viewBox="0 0 24 24">
+      <path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3 20.3l1.3-4.7A8.5 8.5 0 1 1 20.5 11.6Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+      <path d="M8.3 7.3c-.3 0-.9.5-.9 1.4 0 2.5 3.4 6 6 6.6.9.2 1.8-.3 2.1-1 .1-.3.1-.5-.2-.7l-1.6-.8c-.3-.1-.4-.1-.6.2l-.6.7c-.2.2-.4.2-.7.1-1-.4-2.2-1.5-2.6-2.3-.1-.3-.1-.4.1-.6l.5-.6c.2-.2.2-.4.1-.6l-.7-1.9c-.2-.4-.5-.5-.9-.5Z"
+            fill="currentColor"
+            stroke="none"/>
+    </symbol>
+  </svg>
+
+  <!-- SAME HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="Vowelle home">
+        <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <strong>Vowelle<span>.</span></strong>
+          <small>Your Story, Beautifully Invited.</small>
+        </span>
+      </a>
+
+      <nav class="navigation" id="navigation" aria-label="Main navigation">
+        <div class="home-group">
+          <a class="nav-link active" href="index.html">Home</a>
+
+          <button class="dropdown-toggle" id="homeToggle" type="button"
+            aria-label="Open Home pages" aria-expanded="false"
+            aria-controls="homeDropdown">
+            <svg class="icon" aria-hidden="true"><use href="#chevron"/></svg>
+          </button>
+
+          <div class="home-dropdown" id="homeDropdown" hidden>
+            <a href="index.html">Home 1 — Classic</a>
+            <a href="home2.html" aria-current="page">
+              Home 2 — Premium <span class="badge">PREMIUM</span>
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="service.html">Services</a>
+        <a class="nav-link" href="custom-design.html">Custom Design</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="button primary mobile-nav-cta" href="start-design.html">Start Your Design</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" type="button"
+          aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon" aria-hidden="true">
+            <use id="themeIcon" href="#moon"/>
+          </svg>
+        </button>
+
+        <button class="icon-button" id="directionToggle" type="button"
+          aria-label="Switch to right-to-left layout"
+          aria-pressed="false" title="LTR">
+          <svg class="icon" aria-hidden="true"><use href="#direction"/></svg>
+        </button>
+
+        <a class="button primary header-cta" href="start-design.html">Start Your Design</a>
+
+        <button class="icon-button mobile-toggle" id="menuToggle" type="button"
+          aria-label="Open navigation" aria-expanded="false"
+          aria-controls="navigation">
+          <svg class="icon" aria-hidden="true"><use href="#menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1 — UPDATED PREMIUM HERO / NO BACKGROUND IMAGE -->
+    <section class="atelier-hero" aria-labelledby="heroTitle">
+      <div class="atelier-orbit orbit-one" aria-hidden="true"></div>
+      <div class="atelier-orbit orbit-two" aria-hidden="true"></div>
+
+      <div class="container atelier-grid">
+        <div class="atelier-copy">
+          <p class="eyebrow atelier-enter atelier-delay-one">
+            <span class="atelier-dot" aria-hidden="true"></span>
+           ✦ Vowelle / The Wedding Edit
+          </p>
+
+          <h1 id="heroTitle" class="atelier-enter atelier-delay-two">
+            Your Love Story,<br>
+            <em>Beautifully Invited.</em>
+          </h1>
+
+          <p class="atelier-description atelier-enter atelier-delay-three">
+            For a day like no other. Discover personal invitations and
+            beautifully coordinated stationery, composed around your story.
+          </p>
+
+          <div class="button-row atelier-enter atelier-delay-four">
+            <a class="button primary" href="products.html">
+              Explore Collections <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button secondary" href="custom-design.html">
+              Create Something Personal
+            </a>
+          </div>
+
+          <div class="atelier-details atelier-enter atelier-delay-four">
+            <span>PERSONAL BY DESIGN</span>
+            <span aria-hidden="true">✦</span>
+            <span>BEAUTIFUL BY NATURE</span>
+          </div>
+        </div>
+
+        <div class="atelier-display atelier-enter atelier-delay-three"
+          role="img"
+          aria-label="An illustrated burgundy envelope, rose RSVP card and elegant wedding invitation for Olivia and Ethan">
+
+          <div class="paper-scene" aria-hidden="true">
+            <div class="paper-halo"></div>
+
+            <div class="paper-envelope">
+              <div class="envelope-lines"></div>
+              <span class="envelope-monogram">V</span>
+            </div>
+
+            <div class="paper-rsvp">
+              <span>THE JOY OF</span>
+              <strong>celebrating<br>together.</strong>
+              <i></i>
+              <small>Kindly reply</small>
+            </div>
+
+            <div class="paper-invitation">
+              <div class="invitation-border"></div>
+
+              <svg class="paper-botanical" viewBox="0 0 120 80" fill="none">
+                <path d="M60 75V22M60 54C31 52 21 29 29 23c22 3 32 17 31 31ZM60 43c28-2 38-23 29-29-20 3-29 15-29 29ZM60 26C45 14 51 3 60 3c10 0 16 11 0 23Z"
+                  stroke="currentColor" stroke-width="1.3"/>
+              </svg>
+
+              <span class="paper-kicker">TOGETHER WITH THEIR FAMILIES</span>
+
+              <strong class="paper-names">
+                Olivia <em>&</em> Ethan
+              </strong>
+
+              <p>invite you to celebrate<br>their beautiful beginning</p>
+
+              <div class="paper-date">
+                <span>JUNE</span>
+                <strong>21</strong>
+                <span>2027</span>
+              </div>
+
+              <span class="paper-location">THE GARDEN HOUSE</span>
+              <span class="paper-signature">A love story, beautifully invited.</span>
+            </div>
+
+            <div class="paper-seal">
+              V
+              <span>VOWELLE</span>
+            </div>
+
+            <span class="paper-spark spark-one">✧</span>
+            <span class="paper-spark spark-two">✧</span>
+          </div>
+
+          <div class="atelier-caption">
+            <span class="caption-line"></span>
+            THE PERSONAL COLLECTION
+            <span class="caption-line"></span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 2 — CURATED COLLECTIONS -->
+    <section class="premium-section" id="weddingEdit" aria-labelledby="editTitle">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="eyebrow">✦ The curated collection</p>
+            <h2 id="editTitle">A mood. A moment.<br><em>Your invitation.</em></h2>
+          </div>
+
+          <div class="section-intro">
+            <p>Four distinct expressions, each ready to become something personal.</p>
+            <a class="text-link" href="products.html">View All Collections <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="collection-gallery">
+          <a class="edit-card edit-tall reveal" href="products.html?theme=floral">
+            <div class="image-wrap">
+              <img src="https://images.pexels.com/photos/11503480/pexels-photo-11503480.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                alt="Floral stationery with handwritten letters and envelopes"
+                width="800" height="1100" loading="lazy">
+            </div>
+            <div class="edit-caption">
+              <div>
+                <span>01 / FLORAL</span>
+                <h3>Floral Romance</h3>
+              </div>
+              <span class="round-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <a class="edit-card edit-short reveal" href="products.html?theme=minimal">
+            <div class="image-wrap">
+              <img src="https://images.pexels.com/photos/10633532/pexels-photo-10633532.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Simple handwritten invitation on white textile"
+                width="800" height="900" loading="lazy">
+            </div>
+            <div class="edit-caption">
+              <div>
+                <span>02 / MINIMAL</span>
+                <h3>Quiet Modern</h3>
+              </div>
+              <span class="round-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <a class="edit-card edit-tall reveal" href="products.html?theme=royal">
+            <div class="image-wrap">
+              <img src="https://images.pexels.com/photos/11503488/pexels-photo-11503488.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                alt="Decorative invitation with refined lettering"
+                width="800" height="1100" loading="lazy">
+            </div>
+            <div class="edit-caption">
+              <div>
+                <span>03 / ROYAL</span>
+                <h3>Royal Elegance</h3>
+              </div>
+              <span class="round-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <a class="edit-card edit-short reveal" href="products.html?theme=rustic">
+            <div class="image-wrap">
+              <img src="https://images.pexels.com/photos/29395419/pexels-photo-29395419.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Wedding stationery with natural textures and rustic details"
+                width="800" height="900" loading="lazy">
+            </div>
+            <div class="edit-caption">
+              <div>
+                <span>04 / RUSTIC</span>
+                <h3>Natural Poetry</h3>
+              </div>
+              <span class="round-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 — DESIGN PHILOSOPHY -->
+    <section class="premium-section philosophy-section" aria-labelledby="philosophyTitle">
+      <div class="container philosophy-grid">
+        <div class="philosophy-visual reveal">
+          <div class="philosophy-main image-wrap">
+            <img src="https://images.pexels.com/photos/29821870/pexels-photo-29821870.jpeg?auto=compress&cs=tinysrgb&w=1100"
+              alt="Wedding stationery with soft fabric and bridal accessories"
+              width="900" height="1100" loading="lazy">
+          </div>
+          <div class="philosophy-note">
+            <span>THE VOWELLE APPROACH</span>
+            <p>Considered.<br>Personal.<br><em>Entirely yours.</em></p>
+          </div>
+        </div>
+
+        <div class="philosophy-copy reveal">
+          <p class="eyebrow">✦ Beyond beautiful paper</p>
+          <h2 id="philosophyTitle">
+            The smallest details.<br><em>The deepest meaning.</em>
+          </h2>
+          <p>Your names, your words, your shared story. We turn the details
+            that matter into a visual language that feels unmistakably yours.</p>
+          <p>Thoughtful typography and coordinated design bring each piece
+            together, from the first announcement to the last thank-you.</p>
+
+          <div class="philosophy-values">
+            <div><span>01</span><h3>Personal storytelling</h3></div>
+            <div><span>02</span><h3>Considered composition</h3></div>
+            <div><span>03</span><h3>A beautifully connected suite</h3></div>
+          </div>
+
+          <a class="button primary" href="about.html">Meet Vowelle</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 — INTERACTIVE STATIONERY SUITE -->
+    <section class="premium-section" aria-labelledby="suiteTitle">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">✦ Your celebration, coordinated</p>
+          <h2 id="suiteTitle">One Story.<em> Every Paper Detail.</em></h2>
+          <p>Choose a piece to explore how your wedding suite comes together.</p>
+        </div>
+
+        <div class="suite-layout reveal">
+          <div class="suite-image image-wrap">
+            <img src="https://images.pexels.com/photos/32862205/pexels-photo-32862205.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Wedding invitation suite arranged with bridal accessories"
+              width="1100" height="1000" loading="lazy">
+            <span class="suite-image-label">THE COMPLETE CELEBRATION</span>
+          </div>
+
+          <div class="suite-details">
+            <div class="suite-tabs" role="group" aria-label="Explore stationery categories">
+              <button type="button" class="suite-tab active"
+                data-piece="invitations" aria-pressed="true">Invitations</button>
+              <button type="button" class="suite-tab"
+                data-piece="save-the-date" aria-pressed="false">Save the Date</button>
+              <button type="button" class="suite-tab"
+                data-piece="rsvp" aria-pressed="false">RSVP</button>
+              <button type="button" class="suite-tab"
+                data-piece="menus" aria-pressed="false">Menus</button>
+              <button type="button" class="suite-tab"
+                data-piece="place-cards" aria-pressed="false">Place Cards</button>
+              <button type="button" class="suite-tab"
+                data-piece="thank-you" aria-pressed="false">Thank You</button>
+            </div>
+
+            <div class="suite-panel" id="suitePanel" aria-live="polite" aria-atomic="true">
+              <span class="small-label" id="pieceNumber">01 / THE FIRST IMPRESSION</span>
+              <h3 id="pieceTitle">Wedding Invitations</h3>
+              <p id="pieceDescription">Introduce your celebration with meaningful wording,
+                considered typography and a design that captures your wedding style.</p>
+              <ul id="pieceFeatures">
+                <li>Personal names and invitation wording</li>
+                <li>Coordinated colors and typography</li>
+                <li>Envelope and finishing direction</li>
+              </ul>
+              <a class="text-link" id="pieceLink" href="products.html?category=invitations">
+                Explore This Piece <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <p class="suite-note">Imagery illustrates the overall stationery style.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 — SERVICES -->
+    <section class="premium-section services-section" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="eyebrow">✦ The studio services</p>
+            <h2 id="servicesTitle">Beautiful ideas.<br><em>Thoughtful execution.</em></h2>
+          </div>
+          <div class="section-intro">
+            <p>From a single invitation to an entire wedding suite, choose the
+              design support your celebration needs.</p>
+            <a class="text-link" href="service.html#services">Explore Services <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="service-list">
+          <article class="premium-service reveal">
+            <span class="service-number">01</span>
+            <svg class="service-icon" aria-hidden="true"><use href="#pen"/></svg>
+            <h3>Personalized Invitation Design</h3>
+            <p>Names, wording, layouts and meaningful details, thoughtfully composed around you.</p>
+            <a href="service.html#services" class="service-arrow"
+              aria-label="Explore personalized invitation design">↗</a>
+          </article>
+
+          <article class="premium-service reveal">
+            <span class="service-number">02</span>
+            <svg class="service-icon" aria-hidden="true"><use href="#suite"/></svg>
+            <h3>Complete Stationery Suites</h3>
+            <p>A coordinated family of paper pieces, designed to carry your story through the day.</p>
+            <a href="service.html#services" class="service-arrow"
+              aria-label="Explore complete stationery suites">↗</a>
+          </article>
+
+          <article class="premium-service reveal">
+            <span class="service-number">03</span>
+            <svg class="service-icon" aria-hidden="true"><use href="#phone"/></svg>
+            <h3>Digital Invitations</h3>
+            <p>Elegant digital announcements prepared for sharing with the people who matter.</p>
+            <a href="service.html#services" class="service-arrow"
+              aria-label="Explore digital invitations">↗</a>
+          </article>
+
+          <article class="premium-service reveal">
+            <span class="service-number">04</span>
+            <svg class="service-icon" aria-hidden="true"><use href="#print"/></svg>
+            <h3>Print & Finishing Guidance</h3>
+            <p>Helpful direction on paper, envelopes, print preparation and appropriate finishes.</p>
+            <a href="service.html#services" class="service-arrow"
+              aria-label="Explore print and finishing guidance">↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 — CUSTOM JOURNEY -->
+    <section class="premium-section journey-section" aria-labelledby="journeyTitle">
+      <div class="container">
+        <div class="journey-heading reveal">
+          <p class="eyebrow">✦ The bespoke experience</p>
+          <h2 id="journeyTitle">From your first idea<br>to <em>your finished suite.</em></h2>
+          <p>A clear, collaborative process with room for the details that make it yours.</p>
+        </div>
+
+        <div class="journey-grid">
+          <article class="journey-card reveal">
+            <span class="step-number">01</span>
+            <h3>Share Your Vision</h3>
+            <p>Tell us your story, your celebration plans and the mood you want to create.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="step-number">02</span>
+            <h3>Discover Your Direction</h3>
+            <p>Choose the typography, layout and visual details that feel like you.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="step-number">03</span>
+            <h3>Refine Together</h3>
+            <p>Review the wording and composition, then bring the final details into focus.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="step-number">04</span>
+            <h3>Begin Your Celebration</h3>
+            <p>Receive your agreed design files, with clear preparation and finishing guidance.</p>
+          </article>
+        </div>
+
+        <div class="centered journey-action reveal">
+          <a class="button primary" href="start-design.html">Start Your Custom Design</a>
+          <p>No two love stories are the same. Your stationery shouldn’t be either.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 — TESTIMONIALS -->
+    <section class="premium-section words-section" aria-labelledby="wordsTitle">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">✦ A little love, in words</p>
+          <h2 id="wordsTitle">Beautiful Paper.<em> Lasting Feelings.</em></h2>
+          <p>Illustrative sample testimonials for this website design;
+            these are not verified customer reviews.</p>
+        </div>
+
+        <div class="premium-testimonials">
+          <figure class="premium-quote reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>Every little detail felt like us. Our invitation became
+              one of our favorite memories of the celebration.</blockquote>
+            <figcaption>
+              <strong>Maya & Arjun</strong>
+              <span>Sample couple / Floral collection</span>
+            </figcaption>
+          </figure>
+
+          <figure class="premium-quote featured-quote reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>Quietly elegant, beautifully personal.
+              The whole suite told one lovely story.</blockquote>
+            <figcaption>
+              <strong>Ella & James</strong>
+              <span>Sample couple / Minimal collection</span>
+            </figcaption>
+          </figure>
+
+          <figure class="premium-quote reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>From the first announcement to our thank-you cards,
+              everything felt thoughtfully connected.</blockquote>
+            <figcaption>
+              <strong>Riya & Dev</strong>
+              <span>Sample couple / Rustic collection</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 — FINAL CTA -->
+    <section class="final-section" aria-labelledby="finalTitle">
+      <div class="container final-grid">
+        <div class="final-copy reveal">
+          <p class="eyebrow">✦ Your beautiful beginning</p>
+          <h2 id="finalTitle">Let’s Create the First Chapter of Your Celebration.</h2>
+          <p>A personal story deserves a personal invitation.
+            Let’s make yours something to remember.</p>
+          <div class="button-row">
+            <a class="button primary" href="start-design.html">Start Your Design</a>
+            <a class="button secondary" href="contact.html">Contact Our Studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SAME FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Vowelle home">
+          <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+          <span class="brand-copy">
+            <strong>Vowelle<span>.</span></strong>
+            <small>Your Story, Beautifully Invited.</small>
+          </span>
+        </a>
+
+        <p>Personal wedding invitations and coordinated stationery,
+          thoughtfully composed for your beautiful beginning.</p>
+
+        <!-- Add your studio's actual social URLs in data-url. -->
+        <div class="social-links" aria-label="Social links">
+          <a class="social-link" href="#socialNotice" data-url="" data-name="Instagram"
+            aria-label="Instagram — destination pending">
+            <svg class="icon" aria-hidden="true"><use href="#instagram"/></svg>
+          </a>
+          <a class="social-link" href="#socialNotice" data-url="" data-name="Pinterest"
+            aria-label="Pinterest — destination pending">
+            <svg class="icon" aria-hidden="true"><use href="#pinterest"/></svg>
+          </a>
+          <a class="social-link" href="#socialNotice" data-url="" data-name="Facebook"
+            aria-label="Facebook — destination pending">
+            <svg class="icon" aria-hidden="true"><use href="#facebook"/></svg>
+          </a>
+          <a class="social-link"
+             href="#socialNotice"
+             data-url=""
+             data-name="WhatsApp"
+             aria-label="WhatsApp — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#whatsapp"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Vowelle</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="service.html">Design Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Your Celebration</h3>
+        <ul class="footer-links">
+          <li><a href="custom-design.html">Custom Design</a></li>
+          <li><a href="start-design.html">Start Your Design</a></li>
+          <li><a href="home2.html">Home 2 — Premium</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+        <p class="placeholder-note">Placeholder studio details — replace before publishing.</p>
+        <ul class="contact-list">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#mail"/></svg>
+            <a href="mailto:hello@vowelle.example">hello@vowelle.example</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#phone"/></svg>
+            <span>Phone: add your studio number</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#suite"/></svg>
+            <span>Address: add your studio location</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Vowelle. All rights reserved.</p>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

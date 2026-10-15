@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Discover Vowelle wedding invitations and coordinated stationery, thoughtfully designed around your story.">
+  <meta name="theme-color" content="#742C45">
+  <title>Vowelle — Your Story, Beautifully Invited.</title>
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Inline SVG icons -->
+  <svg class="svg-library"
+       xmlns="http://www.w3.org/2000/svg"
+       aria-hidden="true">
+
+    <symbol id="logo" viewBox="0 0 64 64">
+      <rect x="7" y="24" width="50" height="32" rx="5"
+            fill="none" stroke="currentColor" stroke-width="2.3"/>
+      <path d="m8 27 24 17 24-17M8 53l17-15m31 15L39 38"
+            fill="none" stroke="currentColor" stroke-width="2.3"/>
+      <path d="M32 25V8m0 11C18 19 19 5 32 12m0 4C46 16 45 3 32 9"
+            fill="none" stroke="var(--secondary)" stroke-width="2.3"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="arrow" viewBox="0 0 24 24">
+      <path d="M4 12h16m-6-6 6 6-6 6"/>
+    </symbol>
+
+    <symbol id="chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+
+    <symbol id="sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>
+    </symbol>
+
+    <symbol id="moon" viewBox="0 0 24 24">
+      <path d="M20.5 13A9 9 0 0 1 11 3.5 9 9 0 1 0 20.5 13Z"/>
+    </symbol>
+
+    <symbol id="direction" viewBox="0 0 24 24">
+      <path d="M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4"/>
+    </symbol>
+
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </symbol>
+
+    <symbol id="pen" viewBox="0 0 24 24">
+      <path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-4-4L5 15l-1 5Z"/>
+    </symbol>
+
+    <symbol id="suite" viewBox="0 0 24 24">
+      <rect x="3" y="7" width="14" height="14" rx="2"/>
+      <path d="M7 7V3h14v14h-4M7 12h6M7 16h6"/>
+    </symbol>
+
+    <symbol id="phone" viewBox="0 0 24 24">
+      <rect x="6" y="2" width="12" height="20" rx="3"/>
+      <path d="M10 5h4M11 18h2"/>
+    </symbol>
+
+    <symbol id="print" viewBox="0 0 24 24">
+      <path d="M6 9V3h12v6M6 17H3V9h18v8h-3"/>
+      <rect x="6" y="14" width="12" height="7"/>
+      <path d="M17 11h1"/>
+    </symbol>
+
+    <symbol id="mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="m3 6 9 7 9-7"/>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r=".8"
+              fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="pinterest" viewBox="0 0 24 24">
+      <path d="M9 21l3-12m-2 7c-1-2-2-4-1-7 1-4 7-4 8-1 2 5-3 10-5 6M6 16C0 9 6 2 12 2c6 0 10 4 10 10s-4 10-10 10"/>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path d="M14 22v-9h3l.5-4H14V6.5c0-1 .5-1.5 1.5-1.5H18V1.5L15 1c-3 0-5 2-5 5v3H7v4h3v9"
+            fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="whatsapp" viewBox="0 0 24 24">
+      <path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3 20.3l1.3-4.7A8.5 8.5 0 1 1 20.5 11.6Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+      <path d="M8.3 7.3c-.3 0-.9.5-.9 1.4 0 2.5 3.4 6 6 6.6.9.2 1.8-.3 2.1-1 .1-.3.1-.5-.2-.7l-1.6-.8c-.3-.1-.4-.1-.6.2l-.6.7c-.2.2-.4.2-.7.1-1-.4-2.2-1.5-2.6-2.3-.1-.3-.1-.4.1-.6l.5-.6c.2-.2.2-.4.1-.6l-.7-1.9c-.2-.4-.5-.5-.9-.5Z"
+            fill="currentColor"
+            stroke="none"/>
+    </symbol>
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+
+      <a class="brand" href="index.html" aria-label="Vowelle home">
+        <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <strong>Vowelle<span>.</span></strong>
+          <small>Your Story, Beautifully Invited.</small>
+        </span>
+      </a>
+
+      <nav class="navigation"
+           id="navigation"
+           aria-label="Main navigation">
+
+        <div class="home-group">
+          <a class="nav-link active"
+             href="index.html"
+             aria-current="page">Home</a>
+
+          <button class="dropdown-toggle"
+                  id="homeToggle"
+                  type="button"
+                  aria-label="Open Home pages"
+                  aria-expanded="false"
+                  aria-controls="homeDropdown">
+            <svg class="icon" aria-hidden="true">
+              <use href="#chevron"/>
+            </svg>
+          </button>
+
+          <div class="home-dropdown" id="homeDropdown" hidden>
+            <a href="index.html" aria-current="page">
+              Home 1 — Classic
+            </a>
+            <a href="home2.html">
+              Home 2 — Premium
+              <span class="badge">PREMIUM</span>
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="service.html">Services</a>
+        <a class="nav-link" href="custom-design.html">Custom Design</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <a class="button primary mobile-nav-cta"
+           href="start-design.html">Start Your Design</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button"
+                id="themeToggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                aria-pressed="false">
+          <svg class="icon" aria-hidden="true">
+            <use id="themeIcon" href="#moon"/>
+          </svg>
+        </button>
+
+        <button class="icon-button"
+                id="directionToggle"
+                type="button"
+                aria-label="Switch to right-to-left layout"
+                aria-pressed="false"
+                title="LTR">
+          <svg class="icon" aria-hidden="true">
+            <use href="#direction"/>
+          </svg>
+        </button>
+
+        <a class="button primary header-cta"
+           href="start-design.html">Start Your Design</a>
+
+        <button class="icon-button mobile-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="navigation">
+          <svg class="icon" aria-hidden="true">
+            <use href="#menu"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Premium Hero -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <svg class="hero-symbol hero-symbol--bloom"
+           viewBox="0 0 120 120"
+           aria-hidden="true"
+           focusable="false">
+        <path d="M60 20c8 12 8 20 0 26-8-6-8-14 0-26Zm0 80c-8-12-8-20 0-26 8 6 8 14 0 26ZM20 60c12-8 20-8 26 0-6 8-14 8-26 0Zm80 0c-12 8-20 8-26 0 6-8 14-8 26 0Z"/>
+        <path d="M34 34c14 2 20 8 18 18-10 2-16-4-18-18Zm52 52c-14-2-20-8-18-18 10-2 16 4 18 18Zm0-52c-2 14-8 20-18 18-2-10 4-16 18-18Zm-52 52c2-14 8-20 18-18 2 10-4 16-18 18Z"/>
+        <circle cx="60" cy="60" r="7"/>
+      </svg>
+      <svg class="hero-symbol hero-symbol--rings"
+           viewBox="0 0 120 80"
+           aria-hidden="true"
+           focusable="false">
+        <circle cx="46" cy="42" r="25"/>
+        <circle cx="74" cy="42" r="25"/>
+        <path d="m55 20 10 0m-10 44 10 0"/>
+      </svg>
+      <svg class="hero-symbol hero-symbol--sparkle"
+           viewBox="0 0 80 80"
+           aria-hidden="true"
+           focusable="false">
+        <path d="M40 5c3 22 10 29 35 35-25 5-32 12-35 35C36 52 29 45 5 40 29 34 36 27 40 5Z"/>
+      </svg>
+
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">✦ Wedding invitations & stationery</p>
+
+          <h1 id="heroTitle">
+            Your Love Story,<br>
+            <em>Beautifully Invited.</em>
+          </h1>
+
+          <p class="lead">
+            A little paper. A lasting feeling. Personalized invitations
+            and thoughtfully coordinated stationery for a celebration
+            that feels entirely yours.
+          </p>
+
+          <div class="button-row">
+            <a class="button primary" href="products.html">
+              Explore Collections
+            </a>
+            <a class="button secondary" href="custom-design.html">
+              Create Something Personal
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span></span>
+            Thoughtful details, from the first hello.
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <div class="hero-image image-wrap">
+            <img
+              src="./images/luxy wed1.jpg"
+              alt="Wedding calligraphy, envelopes and floral details arranged together"
+              width="1000"
+              height="1200"
+              fetchpriority="high">
+          </div>
+
+          <div class="hero-detail-image image-wrap">
+            <img
+              src="./images/wedd 2.jpg"
+              alt="A refined wedding invitation on soft white fabric"
+              width="400"
+              height="500"
+              fetchpriority="high">
+          </div>
+
+          <div class="image-caption">
+            The invitation is only<br>
+            <em>the beginning.</em>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Collections -->
+    <section class="section"
+             id="collections"
+             aria-labelledby="collectionsTitle">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">✦ A style for every story</p>
+          <h2 id="collectionsTitle">Our Signature Collections</h2>
+          <p>Find the feeling that belongs to your celebration.</p>
+        </div>
+
+        <div class="grid collection-grid">
+
+          <article class="collection-card reveal">
+            <a class="image-wrap" href="products.html?theme=floral">
+              <img
+                src="./images/floral.jpg"
+                alt="Decorative wedding invitation with delicate lettering"
+                width="600"
+                height="750"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">01 / FLORAL</span>
+              <h3>Floral Romance</h3>
+              <p>Soft blossoms, flowing details and heartfelt charm.</p>
+              <a class="text-link" href="products.html?theme=floral">
+                Explore Collection <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="collection-card reveal">
+            <a class="image-wrap" href="products.html?theme=minimal">
+              <img
+                src="https://images.pexels.com/photos/29821867/pexels-photo-29821867.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Wedding invitation arranged on white fabric"
+                width="600"
+                height="750"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">02 / MINIMAL</span>
+              <h3>Modern Minimal</h3>
+              <p>Quiet typography and beautifully considered space.</p>
+              <a class="text-link" href="products.html?theme=minimal">
+                Explore Collection <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="collection-card reveal">
+            <a class="image-wrap" href="products.html?theme=royal">
+              <img
+                src="https://images.pexels.com/photos/13106764/pexels-photo-13106764.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Elegant invitation with a dark envelope and wax seal"
+                width="600"
+                height="750"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">03 / ROYAL</span>
+              <h3>Royal Elegance</h3>
+              <p>
+                Rich character, refined lettering and a grand first impression.
+              </p>
+              <a class="text-link" href="products.html?theme=royal">
+                Explore Collection <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="collection-card reveal">
+            <a class="image-wrap" href="products.html?theme=rustic">
+              <img
+                src="https://images.pexels.com/photos/29395419/pexels-photo-29395419.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Wedding invitation flat lay with rustic decorative details"
+                width="600"
+                height="750"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">04 / RUSTIC</span>
+              <h3>Rustic Charm</h3>
+              <p>Natural textures and an effortlessly personal touch.</p>
+              <a class="text-link" href="products.html?theme=rustic">
+                Explore Collection <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About -->
+    <section class="section soft-section" aria-labelledby="aboutTitle">
+      <div class="container split-grid">
+
+        <div class="about-image image-wrap reveal">
+          <img
+            src="https://images.pexels.com/photos/10633532/pexels-photo-10633532.jpeg?auto=compress&cs=tinysrgb&w=1100"
+            alt="Handwritten stationery and wax seal on a soft textile"
+            width="900"
+            height="1000"
+            loading="lazy">
+        </div>
+
+        <div class="reveal">
+          <p class="eyebrow">✦ The heart behind the paper</p>
+
+          <h2 id="aboutTitle">
+            For moments that<br>
+            <em>deserve meaning.</em>
+          </h2>
+
+          <p>
+            At Vowelle, we believe your invitations should tell your
+            story before the celebration begins. We bring together
+            thoughtful typography, personal details and a coordinated
+            visual language.
+          </p>
+
+          <p>
+            From your first announcement to your final thank-you,
+            every piece is designed to feel like part of the same
+            beautiful chapter.
+          </p>
+
+          <ul class="values">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Personal to You</h3>
+                <p>Your story guides every design decision.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Thoughtfully Crafted</h3>
+                <p>Careful type, balanced layouts and meaningful details.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Beautifully Coordinated</h3>
+                <p>A consistent look throughout your celebration.</p>
+              </div>
+            </li>
+          </ul>
+
+          <a class="button primary" href="about.html">
+            Discover Our Story
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Products -->
+    <section class="section" aria-labelledby="productsTitle">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">✦ Every detail, together</p>
+          <h2 id="productsTitle">Paper for Every Chapter</h2>
+          <p>Explore coordinated stationery by your preferred theme.</p>
+        </div>
+
+        <div class="filters"
+             role="group"
+             aria-label="Filter products by theme">
+
+          <button type="button"
+                  class="filter active"
+                  data-filter="all"
+                  aria-pressed="true">All</button>
+
+          <button type="button"
+                  class="filter"
+                  data-filter="floral"
+                  aria-pressed="false">Floral</button>
+
+          <button type="button"
+                  class="filter"
+                  data-filter="minimal"
+                  aria-pressed="false">Minimal</button>
+
+          <button type="button"
+                  class="filter"
+                  data-filter="royal"
+                  aria-pressed="false">Royal</button>
+
+          <button type="button"
+                  class="filter"
+                  data-filter="rustic"
+                  aria-pressed="false">Rustic</button>
+        </div>
+
+        <p class="sr-only"
+           id="filterStatus"
+           role="status"
+           aria-live="polite"></p>
+
+        <div class="grid product-grid" id="productGrid">
+
+          <article class="product-card reveal" data-themes="floral royal">
+            <a class="image-wrap" href="products.html?category=invitations">
+              <img
+                src="https://images.pexels.com/photos/11503488/pexels-photo-11503488.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Decorative invitation illustrating wedding invitation designs"
+                width="700"
+                height="550"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">FLORAL / ROYAL</span>
+              <h3>Wedding Invitations</h3>
+              <p>The first glimpse of your celebration.</p>
+              <a class="text-link" href="products.html?category=invitations">
+                Explore Products ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-themes="minimal floral">
+            <a class="image-wrap" href="products.html?category=save-the-date">
+              <img
+                src="https://images.pexels.com/photos/29821867/pexels-photo-29821867.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Wedding stationery inspiration for save-the-date cards"
+                width="700"
+                height="550"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">MINIMAL / FLORAL</span>
+              <h3>Save-the-Date Cards</h3>
+              <p>A beautiful date worth keeping.</p>
+              <a class="text-link" href="products.html?category=save-the-date">
+                Explore Products ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-themes="royal minimal">
+            <a class="image-wrap" href="products.html?category=rsvp">
+              <img
+                src="https://images.pexels.com/photos/13106764/pexels-photo-13106764.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Invitation and envelope inspiration for coordinated reply cards"
+                width="700"
+                height="550"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">ROYAL / MINIMAL</span>
+              <h3>RSVP Cards</h3>
+              <p>A thoughtful way to gather your guests.</p>
+              <a class="text-link" href="products.html?category=rsvp">
+                Explore Products ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-themes="rustic royal">
+            <a class="image-wrap" href="products.html?category=menus">
+              <img
+                src="https://images.pexels.com/photos/29395419/pexels-photo-29395419.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Textured stationery inspiration for wedding menu layouts"
+                width="700"
+                height="550"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">RUSTIC / ROYAL</span>
+              <h3>Wedding Menus</h3>
+              <p>Bring your design story to the table.</p>
+              <a class="text-link" href="products.html?category=menus">
+                Explore Products ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-themes="minimal rustic">
+            <a class="image-wrap" href="products.html?category=place-cards">
+              <img
+                src="https://images.pexels.com/photos/29821870/pexels-photo-29821870.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Wedding paper details and accessories inspiring place cards"
+                width="700"
+                height="550"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">MINIMAL / RUSTIC</span>
+              <h3>Place Cards</h3>
+              <p>A personal welcome at every seat.</p>
+              <a class="text-link" href="products.html?category=place-cards">
+                Explore Products ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-themes="floral rustic">
+            <a class="image-wrap" href="products.html?category=thank-you">
+              <img
+                src="https://images.pexels.com/photos/10633532/pexels-photo-10633532.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Handwritten paper inspiration for personal thank-you cards"
+                width="700"
+                height="550"
+                loading="lazy">
+            </a>
+            <div class="card-copy">
+              <span class="card-number">FLORAL / RUSTIC</span>
+              <h3>Thank-You Cards</h3>
+              <p>Let your gratitude leave a lasting impression.</p>
+              <a class="text-link" href="products.html?category=thank-you">
+                Explore Products ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden>
+          No stationery matches this theme. Please choose another.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Services -->
+    <section class="section soft-section" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">✦ Thoughtful design, clearly explained</p>
+          <h2 id="servicesTitle">Made Personal. Made Beautiful.</h2>
+          <p>Choose the support that fits your celebration.</p>
+        </div>
+
+        <div class="grid services-grid">
+
+          <article class="service-card reveal">
+            <svg class="service-icon" aria-hidden="true">
+              <use href="#pen"/>
+            </svg>
+            <h3>Personalized Invitation Design</h3>
+            <p>
+              Tailored layouts, wording, colors and personal details
+              that reflect your wedding style.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <svg class="service-icon" aria-hidden="true">
+              <use href="#suite"/>
+            </svg>
+            <h3>Complete Stationery Suites</h3>
+            <p>
+              Coordinated invitations, reply cards, menus and
+              finishing touches with one consistent look.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <svg class="service-icon" aria-hidden="true">
+              <use href="#phone"/>
+            </svg>
+            <h3>Digital Invitations</h3>
+            <p>
+              Beautiful screen-ready designs that make your
+              announcement easy to share.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <svg class="service-icon" aria-hidden="true">
+              <use href="#print"/>
+            </svg>
+            <h3>Print & Finishing Guidance</h3>
+            <p>
+              Clear advice on paper, print preparation, envelopes
+              and suitable finishing options.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="centered section-action">
+          <a class="button primary" href="service.html">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Journey -->
+    <section class="section" aria-labelledby="journeyTitle">
+      <div class="container split-grid journey-grid">
+
+        <div class="reveal">
+          <p class="eyebrow">✦ From an idea to your invitation</p>
+
+          <h2 id="journeyTitle">
+            A Beautifully<br>
+            <em>Personal Journey.</em>
+          </h2>
+
+          <ol class="journey">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Share Your Vision</h3>
+                <p>
+                  Tell us about your celebration, inspiration
+                  and the details that matter.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Choose Your Style</h3>
+                <p>Explore a direction that feels right for your story.</p>
+              </div>
+            </li>
+
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Refine Your Design</h3>
+                <p>
+                  Review the wording and layout, then shape
+                  the final details together.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <span>04</span>
+              <div>
+                <h3>Receive Your Finished Suite</h3>
+                <p>
+                  Receive your agreed design files and
+                  preparation guidance.
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          <a class="button primary" href="start-design.html">
+            Start Your Custom Design
+          </a>
+        </div>
+
+        <div class="journey-image image-wrap reveal">
+          <img
+            src="https://images.pexels.com/photos/29821870/pexels-photo-29821870.jpeg?auto=compress&cs=tinysrgb&w=1100"
+            alt="Wedding invitations, envelopes and bridal accessories on fabric"
+            width="900"
+            height="1100"
+            loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section class="section soft-section" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">✦ Words with warmth</p>
+          <h2 id="reviewsTitle">Kind Words from Couples</h2>
+          <p>
+            Illustrative sample testimonials for this website design;
+            these are not verified customer reviews.
+          </p>
+        </div>
+
+        <div class="grid testimonial-grid">
+
+          <figure class="testimonial reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>
+              Our invitation felt like a little piece of us.
+              Every detail came together so beautifully.
+            </blockquote>
+            <figcaption>
+              <strong>Maya & Arjun</strong>
+              <span>Sample couple · Floral Romance</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>
+              We loved the quiet elegance of the design and how
+              naturally the entire suite worked together.
+            </blockquote>
+            <figcaption>
+              <strong>Ella & James</strong>
+              <span>Sample couple · Modern Minimal</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>
+              The personal touches made the stationery feel
+              meaningful, right down to our thank-you cards.
+            </blockquote>
+            <figcaption>
+              <strong>Riya & Dev</strong>
+              <span>Sample couple · Rustic Charm</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- 9. Compact Final CTA -->
+    <section class="final-section" aria-labelledby="finalTitle">
+      <div class="container final-grid">
+        <div class="final-copy reveal">
+          <p class="eyebrow">✦ Your story starts here</p>
+
+          <h2 id="finalTitle">
+            Let’s Create the First Chapter of Your Celebration.
+          </h2>
+
+          <p>
+            Make your first impression a personal one, with
+            stationery designed around your love story.
+          </p>
+
+          <div class="button-row">
+            <a class="button primary" href="start-design.html">
+              Start Your Design
+            </a>
+            <a class="button secondary" href="contact.html">
+              Contact Our Studio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Vowelle home">
+          <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+          <span class="brand-copy">
+            <strong>Vowelle<span>.</span></strong>
+            <small>Your Story, Beautifully Invited.</small>
+          </span>
+        </a>
+
+        <p>
+          Personal wedding invitations and coordinated stationery,
+          thoughtfully composed for your beautiful beginning.
+        </p>
+
+        <!-- Add your actual social profile URLs inside data-url. -->
+        <div class="social-links" aria-label="Social links">
+
+          <a class="social-link"
+             href="#socialNotice"
+             data-url=""
+             data-name="Instagram"
+             aria-label="Instagram — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#instagram"/>
+            </svg>
+          </a>
+
+          <a class="social-link"
+             href="#socialNotice"
+             data-url=""
+             data-name="Pinterest"
+             aria-label="Pinterest — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#pinterest"/>
+            </svg>
+          </a>
+
+          <a class="social-link"
+             href="#socialNotice"
+             data-url=""
+             data-name="Facebook"
+             aria-label="Facebook — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#facebook"/>
+            </svg>
+          </a>
+
+          <a class="social-link"
+             href="#socialNotice"
+             data-url=""
+             data-name="WhatsApp"
+             aria-label="WhatsApp — destination pending">
+            <svg class="icon" aria-hidden="true">
+              <use href="#whatsapp"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Vowelle</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="service.html">Design Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Your Celebration</h3>
+        <ul class="footer-links">
+          <li><a href="custom-design.html">Custom Design</a></li>
+          <li><a href="start-design.html">Start Your Design</a></li>
+          <li><a href="home2.html">Home 2 — Premium</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+
+        <p class="placeholder-note">
+          Placeholder studio details — replace before publishing.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use href="#mail"/>
+            </svg>
+            <a href="mailto:hello@vowelle.example">
+              hello@vowelle.example
+            </a>
+          </li>
+
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use href="#phone"/>
+            </svg>
+            <span>Phone: add your studio number</span>
+          </li>
+
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use href="#suite"/>
+            </svg>
+            <span>Address: add your studio location</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Vowelle. All rights reserved.</p>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#742C45">
+  <meta name="description" content="Create personalized wedding invitations and stationery with Vowelle.">
+  <title>Start Your Design | Vowelle</title>
+
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="start-design.css">
+  <script src="start-design.js" defer></script>
+</head>
+
+<body>
+  <main class="design-shell">
+
+    <!-- Top controls -->
+    <div class="top-controls">
+      <button id="themeToggle" class="icon-btn" type="button"
+        aria-label="Switch to dark mode" aria-pressed="false">
+        <i id="themeIcon" class="bi bi-moon-stars"></i>
+      </button>
+
+      <button id="directionToggle" class="icon-btn direction-btn"
+        type="button" aria-label="Switch to RTL" aria-pressed="false">
+        <i class="bi bi-arrow-left-right"></i>
+      </button>
+    </div>
+
+    <!-- Clickable brand: logo + name -->
+    <a href="index.html" class="brand" aria-label="Vowelle — Back to homepage">
+      <img src="images/logo.png" alt="" class="brand-logo">
+      <span class="brand-details">
+        <strong>Vowelle<span>.</span></strong>
+        <small>Your Story, Beautifully Invited.</small>
+      </span>
+    </a>
+
+    <section class="page-intro">
+      <div class="intro-decoration">
+        <span></span>
+        <i class="bi bi-flower1"></i>
+        <span></span>
+      </div>
+      <p class="eyebrow">A BESPOKE STATIONERY EXPERIENCE</p>
+      <h1>Let's Create Something <em>Beautiful.</em></h1>
+      <p class="intro-lead">
+        Every unforgettable celebration begins with a thoughtful invitation.
+        Share your vision and let your story inspire every detail.
+      </p>
+    </section>
+
+    <!-- Decorative floating stationery -->
+    <div class="floating-detail detail-one" aria-hidden="true">
+      <i class="bi bi-envelope-heart"></i>
+    </div>
+    <div class="floating-detail detail-two" aria-hidden="true">
+      <i class="bi bi-flower2"></i>
+    </div>
+
+    <!-- Main form card -->
+    <section class="design-card" aria-labelledby="formTitle">
+      <div class="card-top">
+        <div>
+          <p class="eyebrow">YOUR DESIGN JOURNEY</p>
+          <h2 id="formTitle">Tell Us Your <em>Story.</em></h2>
+          <p>Let's bring your wedding stationery vision to life.</p>
+        </div>
+        <div class="card-seal" aria-hidden="true">
+          <i class="bi bi-heart"></i>
+        </div>
+      </div>
+
+      <form id="designForm" novalidate>
+        <div class="form-section-title">
+          <span>01</span>
+          <h3>Personal Details</h3>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="fullName">Full Name <b>*</b></label>
+            <input id="fullName" name="fullName" type="text"
+              placeholder="Your full name" autocomplete="name"
+              minlength="2" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address <b>*</b></label>
+            <input id="email" name="email" type="email"
+              placeholder="you@example.com" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone Number <b>*</b></label>
+            <input id="phone" name="phone" type="tel"
+              placeholder="Your contact number"
+              autocomplete="tel" pattern="[+0-9() .-]{7,20}" required>
+          </div>
+
+          <div class="field">
+            <label for="eventDate">Event Date</label>
+            <input id="eventDate" name="eventDate" type="date">
+          </div>
+        </div>
+
+        <div class="form-section-title">
+          <span>02</span>
+          <h3>Your Design Preferences</h3>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="field">
+          <label for="stationeryType">Stationery Type <b>*</b></label>
+          <select id="stationeryType" name="stationeryType" required>
+            <option value="">Choose what you'd love to create</option>
+            <option>Wedding Invitations</option>
+            <option>Save-the-Date Cards</option>
+            <option>RSVP Cards</option>
+            <option>Wedding Menus</option>
+            <option>Place Cards</option>
+            <option>Thank-You Cards</option>
+            <option>Complete Wedding Stationery Suite</option>
+            <option>Other Custom Stationery</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Choose Your Style <b>*</b></label>
+          <div class="style-options">
+            <label class="style-option">
+              <input type="radio" name="designTheme"
+                value="Floral Romance" required>
+              <span>
+                <i class="bi bi-flower1"></i>
+                Floral Romance
+              </span>
+            </label>
+
+            <label class="style-option">
+              <input type="radio" name="designTheme"
+                value="Modern Minimal">
+              <span>
+                <i class="bi bi-gem"></i>
+                Modern Minimal
+              </span>
+            </label>
+
+            <label class="style-option">
+              <input type="radio" name="designTheme"
+                value="Royal Elegance">
+              <span>
+                <i class="bi bi-stars"></i>
+                Royal Elegance
+              </span>
+            </label>
+
+            <label class="style-option">
+              <input type="radio" name="designTheme"
+                value="Rustic Charm">
+              <span>
+                <i class="bi bi-leaf"></i>
+                Rustic Charm
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="quantity">Approximate Quantity</label>
+            <select id="quantity" name="quantity">
+              <option value="">Select quantity</option>
+              <option>Under 50</option>
+              <option>50–100</option>
+              <option>100–200</option>
+              <option>200–500</option>
+              <option>500+</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="budget">Estimated Budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select your budget</option>
+              <option>Under ₹5,000</option>
+              <option>₹5,000–₹10,000</option>
+              <option>₹10,000–₹25,000</option>
+              <option>₹25,000–₹50,000</option>
+              <option>Above ₹50,000</option>
+              <option>Let's discuss</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section-title">
+          <span>03</span>
+          <h3>The Finishing Details</h3>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="field">
+          <label for="colors">Preferred Colors</label>
+          <input id="colors" name="colors" type="text"
+            placeholder="e.g. Burgundy, blush, ivory">
+        </div>
+
+        <div class="field">
+          <label for="message">Tell Us About Your Vision <b>*</b></label>
+          <textarea id="message" name="message" rows="5"
+            minlength="10" required
+            placeholder="Describe your wedding theme, inspiration, favorite details, or anything you'd like us to know..."></textarea>
+        </div>
+
+        <label class="consent">
+          <input id="consent" name="consent" type="checkbox" required>
+          <span>I agree to be contacted regarding my design enquiry. <b>*</b></span>
+        </label>
+
+        <button type="submit" class="submit-btn">
+          <span>Prepare My Design Enquiry</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>
+
+        <p class="form-message" id="formMessage" role="status"
+          aria-live="polite"></p>
+      </form>
+
+      <div class="success-panel" id="successPanel" hidden>
+        <div class="success-icon">
+          <i class="bi bi-envelope-check"></i>
+        </div>
+        <h2>Your Story Starts Here.</h2>
+        <p>
+          Your design enquiry is ready. Download or copy the details
+          to share with the Vowelle studio.
+        </p>
+        <div class="success-actions">
+          <button type="button" class="submit-btn" id="downloadBtn">
+            <span>Download Enquiry</span>
+            <i class="bi bi-download"></i>
+          </button>
+          <button type="button" class="outline-btn" id="copyBtn">
+            <i class="bi bi-clipboard"></i> Copy Details
+          </button>
+          <button type="button" class="text-btn" id="restartBtn">
+            Start Another Design
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <p class="closing-note">
+      <i class="bi bi-heart"></i>
+      Thoughtfully designed, beautifully remembered.
+      <a href="service.html">Explore our services</a>
+    </p>
+  </main>
+</body>
+</html>

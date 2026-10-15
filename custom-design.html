@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Create a personal wedding stationery direction with Vowelle. Explore custom design, coordinated suites and thoughtful finishing details.">
+    <meta name="theme-color" content="#742C45">
+    <title>Custom Design — Vowelle Wedding Stationery</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="custom-design.css">
+    <script src="custom-design.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Shared inline SVG shapes -->
+    <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <symbol id="logo" viewBox="0 0 64 64">
+            <rect x="7" y="24" width="50" height="32" rx="5" fill="none" stroke="currentColor" stroke-width="2.3" />
+            <path d="m8 27 24 17 24-17M8 53l17-15m31 15L39 38" fill="none" stroke="currentColor" stroke-width="2.3" />
+            <path d="M32 25V8m0 11C18 19 19 5 32 12m0 4C46 16 45 3 32 9" fill="none" stroke="var(--secondary)"
+                stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="arrow" viewBox="0 0 24 24">
+            <path d="M4 12h16m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="chevron" viewBox="0 0 24 24">
+            <path d="m6 9 6 6 6-6" />
+        </symbol>
+        <symbol id="sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" />
+        </symbol>
+        <symbol id="moon" viewBox="0 0 24 24">
+            <path d="M20.5 13A9 9 0 0 1 11 3.5 9 9 0 1 0 20.5 13Z" />
+        </symbol>
+        <symbol id="direction" viewBox="0 0 24 24">
+            <path d="M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4" />
+        </symbol>
+        <symbol id="menu" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+        </symbol>
+        <symbol id="pen" viewBox="0 0 24 24">
+            <path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-4-4L5 15l-1 5Z" />
+        </symbol>
+        <symbol id="suite" viewBox="0 0 24 24">
+            <rect x="3" y="7" width="14" height="14" rx="2" />
+            <path d="M7 7V3h14v14h-4M7 12h6M7 16h6" />
+        </symbol>
+        <symbol id="phone" viewBox="0 0 24 24">
+            <rect x="6" y="2" width="12" height="20" rx="3" />
+            <path d="M10 5h4M11 18h2" />
+        </symbol>
+        <symbol id="print" viewBox="0 0 24 24">
+            <path d="M6 9V3h12v6M6 17H3V9h18v8h-3" />
+            <rect x="6" y="14" width="12" height="7" />
+            <path d="M17 11h1" />
+        </symbol>
+        <symbol id="mail" viewBox="0 0 24 24">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 6 9 7 9-7" />
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
+        </symbol>
+        <symbol id="pinterest" viewBox="0 0 24 24">
+            <path
+                d="M9 21l3-12m-2 7c-1-2-2-4-1-7 1-4 7-4 8-1 2 5-3 10-5 6M6 16C0 9 6 2 12 2c6 0 10 4 10 10s-4 10-10 10" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <path d="M14 22v-9h3l.5-4H14V6.5c0-1 .5-1.5 1.5-1.5H18V1.5L15 1c-3 0-5 2-5 5v3H7v4h3v9" fill="currentColor"
+                stroke="none" />
+        </symbol>
+        <symbol id="whatsapp" viewBox="0 0 24 24">
+          <path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3 20.3l1.3-4.7A8.5 8.5 0 1 1 20.5 11.6Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <path d="M8.3 7.3c-.3 0-.9.5-.9 1.4 0 2.5 3.4 6 6 6.6.9.2 1.8-.3 2.1-1 .1-.3.1-.5-.2-.7l-1.6-.8c-.3-.1-.4-.1-.6.2l-.6.7c-.2.2-.4.2-.7.1-1-.4-2.2-1.5-2.6-2.3-.1-.3-.1-.4.1-.6l.5-.6c.2-.2.2-.4.1-.6l-.7-1.9c-.2-.4-.5-.5-.9-.5Z"
+                fill="currentColor"
+                stroke="none"/>
+        </symbol>
+    </svg>
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner container">
+            <a class="brand" href="index.html" aria-label="Vowelle home">
+                <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+                <span class="brand-copy">
+                    <strong>Vowelle<span>.</span></strong>
+                    <small>Your Story, Beautifully Invited.</small>
+                </span>
+            </a>
+            <nav class="navigation" id="navigation" aria-label="Main navigation">
+                <div class="home-group">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <button class="dropdown-toggle" id="homeToggle" type="button" aria-label="Open Home pages"
+                        aria-expanded="false" aria-controls="homeDropdown">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="#chevron" />
+                        </svg>
+                    </button>
+                    <div class="home-dropdown" id="homeDropdown" hidden>
+                        <a href="index.html">Home 1 — Classic</a>
+                        <a href="home2.html">Home 2 — Premium <span class="badge">PREMIUM</span></a>
+                    </div>
+                </div>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="service.html">Services</a>
+                <a class="nav-link active" href="custom-design.html" aria-current="page">Custom Design</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="button primary mobile-nav-cta" href="start-design.html">Start Your Design</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode"
+                    aria-pressed="false">
+                    <svg class="icon" aria-hidden="true">
+                        <use id="themeIcon" href="#moon" />
+                    </svg>
+                </button>
+                <button class="icon-button" id="directionToggle" type="button"
+                    aria-label="Switch to right-to-left layout" aria-pressed="false" title="LTR">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="#direction" />
+                    </svg>
+                </button>
+                <a class="button primary header-cta" href="start-design.html">Start Your Design</a>
+                <button class="icon-button mobile-toggle" id="menuToggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="navigation">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="#menu" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <!-- 1. Viewport hero -->
+        <section class="custom-hero" aria-labelledby="heroTitle">
+            <div class="container custom-hero-grid">
+                <div class="custom-hero-copy">
+                    <p class="eyebrow">✦ Custom wedding stationery · Designed around you</p>
+                    <h1 id="heroTitle">Your Love Story,<br><em>Beautifully Invited.</em></h1>
+                    <p class="lead">A meaningful place. A favorite flower. A story only you can tell. Let’s turn your
+                        inspiration into wedding stationery that feels entirely yours.</p>
+                    <div class="button-row"><a class="button primary" href="#design-brief">Build Your Design Brief</a><a
+                            class="button secondary" href="#journey">Explore The Process</a></div>
+                    <p class="hero-small">PERSONAL DETAILS · CONSIDERED DESIGN · COORDINATED PAPER</p>
+                </div>
+                <div class="custom-hero-art">
+                    <div class="image-wrap custom-hero-photo"><img
+                            src="./images/wedd 2.jpg"
+                            alt="Handwritten stationery with a wax seal on soft fabric" width="1000" height="1200"
+                            fetchpriority="high"></div>
+                    <div class="hero-paper">Made for your moment.<br><em>Kept for your story.</em></div><span
+                        class="hero-side" aria-hidden="true">THE BESPOKE EDIT</span>
+                </div>
+            </div>
+        </section>
+        <!-- 2. Design possibilities -->
+        <section class="section" id="possibilities" aria-labelledby="possibilitiesTitle">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <p class="eyebrow">✦ The possibilities</p>
+                    <h2 id="possibilitiesTitle">A personal touch.<br><em>In every little detail.</em></h2>
+                    <p>Your story can shape the design in more ways than one.</p>
+                </div>
+                <div class="custom-three grid">
+                    <article class="possibility-card reveal"><svg class="service-icon" aria-hidden="true">
+                            <use href="#pen" />
+                        </svg>
+                        <h3>A Signature Identity</h3>
+                        <p>Discuss a monogram, meaningful illustration or lettering direction that connects your
+                            stationery.</p>
+                    </article>
+                    <article class="possibility-card reveal"><svg class="service-icon" aria-hidden="true">
+                            <use href="#suite" />
+                        </svg>
+                        <h3>A Complete Paper Story</h3>
+                        <p>Bring the same visual language to invitations, menus, place cards and thank-you notes.</p>
+                    </article>
+                    <article class="possibility-card reveal"><svg class="service-icon" aria-hidden="true">
+                            <use href="#print" />
+                        </svg>
+                        <h3>Thoughtful Finishing</h3>
+                        <p>Explore paper, envelope details and suitable print finishes during your consultation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- 4. Design journey -->
+        <section class="section" id="journey" aria-labelledby="journeyTitle">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <p class="eyebrow">✦ Your design journey</p>
+                    <h2 id="journeyTitle">From your first idea<br><em>to the final detail.</em></h2>
+                    <p>A collaborative process with clear checkpoints along the way.</p>
+                </div>
+                <ol class="custom-process grid">
+                    <li class="process-card reveal"><span>01</span>
+                        <h3>Share Your Story</h3>
+                        <p>Gather your inspiration, dates, stationery needs and the personal details you would love to
+                            include.</p>
+                    </li>
+                    <li class="process-card reveal"><span>02</span>
+                        <h3>Agree The Direction</h3>
+                        <p>Discuss the concept, design scope, estimated schedule and quote with the studio.</p>
+                    </li>
+                    <li class="process-card reveal"><span>03</span>
+                        <h3>Refine Together</h3>
+                        <p>Review design proofs and confirm wording, colors and agreed revisions.</p>
+                    </li>
+                    <li class="process-card reveal"><span>04</span>
+                        <h3>Approve & Produce</h3>
+                        <p>Give final artwork approval and confirm quantities, materials and production arrangements.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- 5. Personal details -->
+        <section class="section soft-section" aria-labelledby="detailsTitle">
+            <div class="container custom-split">
+                <div class="detail-art reveal">
+                    <div class="image-wrap detail-photo"><img
+                            src="https://images.pexels.com/photos/29395419/pexels-photo-29395419.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"
+                            alt="Wedding stationery flat lay with rustic decorative details" width="1000" height="1200"
+                            loading="lazy"></div>
+                    <div class="detail-label">Little details.<br><em>Entirely you.</em></div>
+                </div>
+                <div class="reveal">
+                    <p class="eyebrow">✦ The art of making it personal</p>
+                    <h2 id="detailsTitle">The things you love.<br><em>Beautifully woven in.</em></h2>
+                    <p>A custom direction can begin with a detail that means something to you. Bring your ideas, and
+                        we’ll discuss how they might become part of your suite.</p>
+                    <ul class="personal-list">
+                        <li><span>01</span>
+                            <div>
+                                <h3>Your meaningful places</h3>
+                                <p>A venue, a landscape or a setting that belongs to your story.</p>
+                            </div>
+                        </li>
+                        <li><span>02</span>
+                            <div>
+                                <h3>Your words &amp; traditions</h3>
+                                <p>Thoughtfully arranged wording and cultural details for your celebration.</p>
+                            </div>
+                        </li>
+                        <li><span>03</span>
+                            <div>
+                                <h3>Your visual language</h3>
+                                <p>Colors, motifs and typography carried consistently across each piece.</p>
+                            </div>
+                        </li>
+                    </ul><a class="text-link" href="#design-brief">Bring your ideas together <span
+                            aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- 6. Interactive design brief -->
+        <section class="section" id="design-brief" aria-labelledby="briefTitle">
+            <div class="container brief-grid">
+                <div class="reveal">
+                    <p class="eyebrow">✦ Your starting point</p>
+                    <h2 id="briefTitle">Create your<br><em>design brief.</em></h2>
+                    <p>Gather a few details before your conversation with the studio. Your selections create a brief you
+                        can download and bring to your consultation.</p>
+                    <p class="brief-note">This tool prepares a text file on your device. It does not send an enquiry or
+                        place an order.</p>
+                    <div class="image-wrap brief-photo"><img
+                            src="https://images.pexels.com/photos/11503480/pexels-photo-11503480.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"
+                            alt="Wedding calligraphy and floral stationery arranged together" width="1000" height="1200"
+                            loading="lazy"></div>
+                </div>
+                <form class="design-brief reveal" id="briefForm">
+                    <div class="form-heading"><span class="eyebrow">YOUR CELEBRATION, IN A FEW WORDS</span>
+                        <h3>A little inspiration goes a long way.</h3>
+                    </div><label for="coupleNames">Names for your stationery</label><input id="coupleNames" name="names"
+                        autocomplete="off" maxlength="160" placeholder="e.g. Maya &amp; Arjun" required><label
+                        for="weddingDate">Celebration date <span>(optional)</span></label><input id="weddingDate"
+                        name="date" type="date"><label for="designStyle">Preferred design direction</label><select
+                        id="designStyle" name="style">
+                        <option value="Not sure yet">Help me find my style</option value="Floral & romantic">Floral
+                        &amp; romantic</option>
+                        <option value="Modern & minimal">Modern &amp; minimal</option>
+                        <option value="Royal & refined">Royal &amp; refined</option>
+                        <option value="Rustic & natural">Rustic &amp; natural</option>
+                    </select>
+                    <fieldset>
+                        <legend>Which pieces are you considering?</legend>
+                        <div class="brief-options"><label class="brief-check"><input type="checkbox" name="pieces"
+                                    value="Wedding invitations" checked><span>Wedding invitations</span></label><label
+                                class="brief-check"><input type="checkbox" name="pieces"
+                                    value="Save-the-dates"><span>Save-the-dates</span></label><label
+                                class="brief-check"><input type="checkbox" name="pieces"
+                                    value="Menus & place cards"><span>Menus & place cards</span></label><label
+                                class="brief-check"><input type="checkbox" name="pieces"
+                                    value="Thank-you cards"><span>Thank-you cards</span></label></div>
+                    </fieldset><label for="inspirationNotes">Your inspiration <span>(optional)</span></label><textarea
+                        id="inspirationNotes" name="notes" rows="4" maxlength="2000"
+                        placeholder="Tell us about your venue, colors, favorite details or a meaningful memory."></textarea><button
+                        class="button primary" type="submit">Download My Design Brief</button>
+                    <p class="brief-status" id="briefStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+        <!-- 7. FAQs -->
+        <section class="section soft-section" aria-labelledby="faqTitle">
+            <div class="container custom-split">
+                <div class="reveal">
+                    <p class="eyebrow">✦ Before we begin</p>
+                    <h2 id="faqTitle">Your questions.<br><em>Thoughtfully answered.</em></h2>
+                    <p>A few helpful starting points for your custom stationery journey.</p><a class="text-link"
+                        href="contact.html">Talk to our studio <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="custom-faq reveal">
+                    <details open>
+                        <summary>Can I begin without a clear design idea?</summary>
+                        <p>Yes. Share the mood of your celebration, your venue and anything you are drawn to. These can
+                            help guide the design conversation.</p>
+                    </details>
+                    <details>
+                        <summary>What is included in a custom design?</summary>
+                        <p>The scope is agreed with the studio before work begins. Your quote should set out the pieces,
+                            design work, revisions and production arrangements included.</p>
+                    </details>
+                    <details>
+                        <summary>Can my whole suite be coordinated?</summary>
+                        <p>Discuss the stationery you need, from save-the-dates to thank-you notes, so the chosen visual
+                            language can carry across the full suite.</p>
+                    </details>
+                    <details>
+                        <summary>How long does the process take?</summary>
+                        <p>Timing depends on the design scope, revision rounds and production finishes. Confirm a
+                            schedule with the studio around your celebration date.</p>
+                    </details>
+                    <details>
+                        <summary>When do I approve the final artwork?</summary>
+                        <p>Review names, dates, wording, quantities and layout before giving final approval. Production
+                            arrangements are confirmed after approval.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- 8. Final CTA -->
+        <section class="final-section" aria-labelledby="finalTitle">
+            <div class="container final-grid">
+                <div class="final-copy reveal">
+                    <p class="eyebrow">✦ Make room for something personal</p>
+                    <h2 id="finalTitle">Your story is the inspiration. Let’s bring it to paper.</h2>
+                    <p>Take your ideas to the studio and begin a beautiful conversation.</p>
+                    <div class="button-row">
+                        <a class="button primary" href="contact.html">Contact Our Studio</a>
+                        <a class="button secondary" href="products.html">Explore Collections</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html" aria-label="Vowelle home">
+                    <img class="brand-logo" src="images/logo.png" alt="" aria-hidden="true">
+                    <span class="brand-copy">
+                        <strong>Vowelle<span>.</span></strong>
+                        <small>Your Story, Beautifully Invited.</small>
+                    </span>
+                </a>
+                <p>Personal wedding invitations and coordinated stationery, thoughtfully composed for your beautiful
+                    beginning.
+                </p>
+                <!-- Replace data-url values with your own verified social URLs. -->
+                <div class="social-links" aria-label="Social links">
+                    <a class="social-link" href="#socialNotice" data-url="" data-name="Instagram"
+                        aria-label="Instagram — destination pending">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="#instagram" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#socialNotice" data-url="" data-name="Pinterest"
+                        aria-label="Pinterest — destination pending">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="#pinterest" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#socialNotice" data-url="" data-name="Facebook"
+                        aria-label="Facebook — destination pending">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="#facebook" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#socialNotice" data-url="" data-name="WhatsApp"
+                        aria-label="WhatsApp — destination pending">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="#whatsapp" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Vowelle</a></li>
+                    <li><a href="products.html">Our Products</a></li>
+                    <li><a href="service.html">Design Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Your Celebration</h3>
+                <ul class="footer-links">
+                    <li><a href="custom-design.html">Custom Design</a></li>
+                    <li><a href="start-design.html">Start Your Design</a></li>
+                    <li><a href="home2.html">Home 2 — Premium</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p class="placeholder-note">Placeholder studio details — replace before publishing.</p>
+                <ul class="contact-list">
+                    <li><svg class="icon" aria-hidden="true">
+                            <use href="#mail" />
+                        </svg><a href="mailto:hello@vowelle.example">hello@vowelle.example</a></li>
+                    <li><svg class="icon" aria-hidden="true">
+                            <use href="#phone" />
+                        </svg><span>Phone: add your studio number</span></li>
+                    <li><svg class="icon" aria-hidden="true">
+                            <use href="#suite" />
+                        </svg><span>Address: add your studio location</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© <span id="year">2026</span> Vowelle. All rights reserved.</p>
+            <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms and Conditions</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
