@@ -42,9 +42,7 @@
     root.dataset.theme = dark ? "dark" : "light";
     root.style.colorScheme = dark ? "dark" : "light";
 
-    themeIcon.className = dark
-      ? "bi bi-sun"
-      : "bi bi-moon-stars";
+    themeIcon.setAttribute("href", dark ? "#sun" : "#moon");
 
     themeButton.setAttribute("aria-pressed", String(dark));
     themeButton.setAttribute(
@@ -89,8 +87,11 @@
     directionButton.setAttribute("aria-pressed", String(rtl));
     directionButton.setAttribute(
       "aria-label",
-      rtl ? "Switch to LTR" : "Switch to RTL"
+      rtl
+        ? "Switch to left-to-right layout"
+        : "Switch to right-to-left layout"
     );
+    directionButton.title = rtl ? "RTL — switch to LTR" : "LTR";
   }
 
   applyDirection(

@@ -1270,6 +1270,35 @@ figcaption span {
   }
 }
 /* Standalone service layouts; inherited brand, header and footer are unchanged. */
+.service-benefits > .container > .section-heading,
+.service-pricing > .container > .section-heading {
+  margin-inline: auto;
+  text-align: center;
+}
+.benefit,
+.price-card,
+.included {
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+}
+@media (hover: hover) {
+  .benefit:hover,
+  .price-card:hover,
+  .included:hover {
+    transform: translateY(-6px);
+    border-color: var(--secondary);
+    box-shadow: var(--shadow);
+  }
+}
+.benefit:focus-within,
+.price-card:focus-within,
+.included:focus-within {
+  transform: translateY(-4px);
+  border-color: var(--secondary);
+  box-shadow: var(--shadow);
+}
 html,body{overflow-x:clip} [hidden]{display:none!important}
 .studio-hero{position:relative;background:radial-gradient(ellipse at 85% 35%,color-mix(in srgb,var(--secondary) 18%,transparent),transparent 55%),var(--bg);border-bottom:1px solid var(--border)}
 .studio-hero-grid{min-height:calc(100svh - var(--header-height));display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:65px;padding-block:60px 85px}
