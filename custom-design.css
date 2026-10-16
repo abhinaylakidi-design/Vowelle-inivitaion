@@ -2079,3 +2079,41 @@ figcaption span {
         transform: none
     }
 }
+
+@media (max-width: 1120px) {
+    .site-header .brand-copy small {
+        display: block;
+    }
+}
+
+@media (max-width: 540px) {
+    .site-header .brand {
+        flex-shrink: 1;
+        min-width: 0;
+        gap: 7px;
+    }
+
+    .site-header .brand-copy {
+        min-width: 0;
+    }
+
+    .site-header .brand-copy small {
+        font-size: .52rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .site-header .brand-logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .site-header .brand-copy strong {
+        font-size: 1.8rem;
+    }
+
+    .site-header .icon-button {
+        width: 34px;
+        height: 34px;
+    }
+}

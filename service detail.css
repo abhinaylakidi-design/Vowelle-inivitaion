@@ -1325,3 +1325,41 @@ html,body{overflow-x:clip} [hidden]{display:none!important}
 @media(max-width:760px){.studio-hero-grid{grid-template-columns:1fr;padding-block:45px 90px}.studio-hero h1{font-size:clamp(2.8rem,11vw,4.8rem)}.paper-stage{min-height:470px;max-width:440px;width:100%;margin:auto}.hero-foot{font-size:.55rem;letter-spacing:.06em}.services-grid,.context-grid,.faq-layout,.benefits-grid,.pricing-grid{grid-template-columns:1fr}.works-grid{grid-template-columns:1fr 1fr}.work-item:first-child{grid-row:auto}.work-item:first-child .image-wrap{height:250px}.work-item:last-child{grid-column:auto}.work-item:last-child .image-wrap{height:250px;border-radius:100px 100px 8px 8px}.studio-cta{padding:45px 24px}.detail-hero .image-wrap{height:450px}.hero-meta{gap:14px}}
 @media(max-width:420px){.works-grid{grid-template-columns:1fr}.paper-sheet{width:82%;padding:35px 20px}.paper-under{width:82%}.paper-stage{min-height:460px}.seal{inset-inline-end:5%}.hero-foot{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal-ready{opacity:1!important;transform:none!important}}
+
+@media (max-width: 1120px) {
+  .site-header .brand-copy small {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .site-header .brand {
+    flex-shrink: 1;
+    min-width: 0;
+    gap: 7px;
+  }
+
+  .site-header .brand-copy {
+    min-width: 0;
+  }
+
+  .site-header .brand-copy small {
+    font-size: .52rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header .brand-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .site-header .brand-copy strong {
+    font-size: 1.8rem;
+  }
+
+  .site-header .icon-button {
+    width: 34px;
+    height: 34px;
+  }
+}
