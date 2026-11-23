@@ -1,4 +1,4 @@
-/* Vowelle — standalone Home 2 JavaScript */
+
 (() => {
   "use strict";
 
@@ -13,7 +13,7 @@
   const homeDropdown = document.getElementById("homeDropdown");
   const homeGroup = homeButton.closest(".home-group");
 
-  /* Safe preference storage */
+  
   const readStorage = key => {
     try {
       return localStorage.getItem(key);
@@ -26,11 +26,11 @@
     try {
       localStorage.setItem(key, value);
     } catch {
-      // Controls continue to work when storage is unavailable.
+      
     }
   };
 
-  /* Light / dark mode */
+  
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
   let savedTheme = readStorage("vowelle-theme");
 
@@ -71,7 +71,7 @@
     }
   });
 
-  /* RTL / LTR */
+  
   function applyDirection(direction) {
     const rtl = direction === "rtl";
 
@@ -100,7 +100,7 @@
     writeStorage("vowelle-direction", direction);
   });
 
-  /* Actual header height keeps hero aligned with the viewport */
+  
   function measureHeader() {
     root.style.setProperty(
       "--header-height",
@@ -121,7 +121,7 @@
     document.fonts.ready.then(measureHeader);
   }
 
-  /* Home dropdown */
+  
   function setDropdown(open, returnFocus = false) {
     homeDropdown.hidden = !open;
     homeButton.setAttribute("aria-expanded", String(open));
@@ -168,7 +168,7 @@
     }
   });
 
-  /* Mobile navigation */
+  
   function setMenu(open, returnFocus = false) {
     navigation.classList.toggle("is-open", open);
     menuButton.setAttribute("aria-expanded", String(open));
@@ -219,7 +219,7 @@
     setMenu(false);
   });
 
-  /* Interactive stationery suite */
+  
   const stationery = {
     invitations: {
       number: "01 / THE FIRST IMPRESSION",
@@ -338,7 +338,7 @@
     });
   });
 
-  /* Scroll reveals */
+  
   const reducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   );
@@ -388,7 +388,7 @@
     });
   }
 
-  /* Online image fallback */
+  
   function imageFallback(image) {
     const wrapper = image.closest(".image-wrap");
 
@@ -428,7 +428,7 @@
     }
   });
 
-  /* Editable social destinations */
+  
   const socialNotice = document.getElementById("socialNotice");
 
   document.querySelectorAll(".social-link").forEach(link => {

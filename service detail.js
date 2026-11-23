@@ -26,7 +26,7 @@
   const service=services.find(item=>item.id===key);
   const container=document.getElementById('serviceContent');
   if(!service){document.title='Service not found — Vowelle';container.innerHTML='<section class="container not-found"><p class="eyebrow">The Vowelle studio</p><h1>Choose your service.</h1><p>Select one of our six services to see its full details.</p><a class="button primary" href="service.html">Browse All Services</a></section>';return;}
-  // Only trusted entries from the local catalog are rendered; URL text is never inserted.
+  
   document.title=service.title+' — Vowelle';document.querySelector('meta[name="description"]').content=service.desc;
   const serviceImages={
     'bespoke-invitations':'./images/minimal classic.jpg',

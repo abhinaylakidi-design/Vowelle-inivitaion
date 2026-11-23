@@ -253,7 +253,7 @@ p {
   text-underline-offset: 5px;
 }
 
-/* HEADER */
+/
 
 .site-header {
   position: sticky;
@@ -469,7 +469,7 @@ p {
   display: none;
 }
 
-/* UPDATED CENTERED HERO */
+/
 
 .studio-hero {
   position: relative;
@@ -646,7 +646,7 @@ p {
   }
 }
 
-/* SECTIONS */
+/
 
 .section {
   padding-block: 96px;
@@ -683,7 +683,7 @@ p {
   transition: transform .7s ease;
 }
 
-/* SERVICES */
+/
 
 .services-grid {
   display: grid;
@@ -751,7 +751,7 @@ p {
   margin-block-end: 12px;
 }
 
-/* GALLERY */
+/
 
 .works-grid {
   display: grid;
@@ -799,7 +799,7 @@ p {
   margin-block-start: 6px;
 }
 
-/* FAQ */
+/
 
 .faq-layout {
   display: grid;
@@ -847,7 +847,7 @@ p {
   max-width: 650px;
 }
 
-/* FINAL CTA */
+/
 
 .final-section {
   width: min(1200px, calc(100% - 64px));
@@ -894,7 +894,7 @@ p {
   margin-block-start: 0;
 }
 
-/* IMAGE FALLBACK */
+/
 
 .image-wrap.image-failed {
   display: grid;
@@ -911,7 +911,7 @@ p {
   font-size: .8rem;
 }
 
-/* FOOTER */
+/
 
 .site-footer {
   background: var(--footer-bg);
@@ -1029,7 +1029,7 @@ p {
   color: var(--muted);
 }
 
-/* REVEAL ANIMATION */
+/
 
 .reveal-ready {
   opacity: 0;
@@ -1042,7 +1042,7 @@ p {
   transform: translateY(0);
 }
 
-/* RESPONSIVE */
+/
 
 @media (max-width: 1320px) {
   .header-inner {

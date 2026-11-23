@@ -1,4 +1,4 @@
-/* VOWELLE — standalone Home 2 */
+/
 
 :root {
   --primary: #742c45;
@@ -188,7 +188,7 @@ p { color: var(--muted); margin: 18px 0; }
 
 .centered { text-align: center; }
 
-/* SAME HEADER */
+/
 
 .site-header {
   position: sticky;
@@ -367,7 +367,7 @@ p { color: var(--muted); margin: 18px 0; }
 
 .mobile-nav-cta, .mobile-toggle { display: none; }
 
-/* UPDATED PREMIUM HERO — NO BACKGROUND IMAGE */
+/
 
 .atelier-hero {
   position: relative;
@@ -792,7 +792,7 @@ p { color: var(--muted); margin: 18px 0; }
   50% { transform: translateY(4px); }
 }
 
-/* GENERAL PREMIUM SECTIONS */
+/
 
 .premium-section { padding-block: 100px; }
 .section-heading { max-width: 760px; margin: 0 auto 45px; }
@@ -834,7 +834,7 @@ a.image-wrap:focus-visible img,
   margin-block-end: 16px;
 }
 
-/* COLLECTION EDIT */
+/
 
 .collection-gallery {
   display: grid;
@@ -885,7 +885,7 @@ a.image-wrap:focus-visible img,
   transform: rotate(8deg);
 }
 
-/* PHILOSOPHY */
+/
 
 .philosophy-section { background: var(--bg-alt); }
 
@@ -944,7 +944,7 @@ a.image-wrap:focus-visible img,
 .philosophy-values span { color: var(--accent-text); font-size: .65rem; }
 .philosophy-values h3 { font-size: 1.45rem; }
 
-/* INTERACTIVE SUITE */
+/
 
 .suite-layout {
   display: grid;
@@ -1017,7 +1017,7 @@ a.image-wrap:focus-visible img,
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* SERVICES */
+/
 
 .services-section { background: var(--bg-alt); }
 .service-list { border-block-start: 1px solid var(--border); }
@@ -1065,7 +1065,7 @@ a.image-wrap:focus-visible img,
   color: #202020;
 }
 
-/* JOURNEY */
+/
 
 .journey-heading {
   max-width: 680px;
@@ -1096,7 +1096,7 @@ a.image-wrap:focus-visible img,
 .journey-action { margin-block-start: 35px; }
 .journey-action p { font-size: .72rem; }
 
-/* TESTIMONIALS */
+/
 
 .words-section { background: var(--bg-alt); }
 
@@ -1151,7 +1151,7 @@ a.image-wrap:focus-visible img,
   margin-block-start: 6px;
 }
 
-/* JOURNAL */
+/
 
 .premium-journal {
   display: grid;
@@ -1182,7 +1182,7 @@ a.image-wrap:focus-visible img,
 .journal-mini h3 { font-size: 1.7rem; }
 .journal-mini .small-label { margin-block-end: 12px; }
 
-/* FINAL CTA */
+/
 
 .final-section {
   width: min(1200px, calc(100% - 64px));
@@ -1222,7 +1222,7 @@ a.image-wrap:focus-visible img,
 .final-copy .eyebrow { margin: 0; }
 .final-copy .button-row { justify-content: center; margin-block-start: 0; }
 
-/* IMAGE FALLBACK */
+/
 
 .image-wrap.image-failed {
   display: grid;
@@ -1239,7 +1239,7 @@ a.image-wrap:focus-visible img,
   font-size: .8rem;
 }
 
-/* SAME FOOTER */
+/
 
 .site-footer {
   background: var(--footer-bg);
@@ -1333,7 +1333,7 @@ a.image-wrap:focus-visible img,
   color: var(--muted);
 }
 
-/* SCROLL REVEALS */
+/
 
 .reveal-ready {
   opacity: 0;
@@ -1343,7 +1343,7 @@ a.image-wrap:focus-visible img,
 
 .reveal-ready.is-visible { opacity: 1; transform: translateY(0); }
 
-/* RESPONSIVE HEADER AND PAGE */
+/
 
 @media (max-width: 1320px) {
   .header-inner { gap: 14px; }
@@ -1556,7 +1556,7 @@ a.image-wrap:focus-visible img,
   .journal-mini .journal-copy { padding-block-start: 0; }
 }
 
-/* RESPONSIVE PREMIUM HERO */
+/
 
 @media (min-width: 801px) and (max-height: 720px) {
   .atelier-hero { padding-block: 24px 60px; }

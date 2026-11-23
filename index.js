@@ -24,7 +24,7 @@
     try {
       localStorage.setItem(key, value);
     } catch {
-      // Controls work even when storage is unavailable.
+      
     }
   };
 
@@ -94,7 +94,7 @@
     writeStorage("vowelle-direction", direction);
   });
 
-  // Measure the header so the hero fills the remaining viewport.
+  
   function measureHeader() {
     root.style.setProperty(
       "--header-height",
@@ -209,7 +209,7 @@
   const mobileQuery = window.matchMedia("(max-width: 1120px)");
   mobileQuery.addEventListener("change", () => setMenu(false));
 
-  // Product theme filters.
+  
   const filterButtons = [...document.querySelectorAll(".filter")];
   const productCards = [...document.querySelectorAll(".product-card")];
   const filterStatus = document.getElementById("filterStatus");
@@ -246,7 +246,7 @@
     });
   });
 
-  // Reveal animations with a reduced-motion fallback.
+  
   const reducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   );
@@ -288,7 +288,7 @@
     });
   }
 
-  // Failed online images retain their layout and descriptive text.
+  
   function imageFallback(image) {
     const wrapper = image.closest(".image-wrap");
 
@@ -315,7 +315,7 @@
     }
   });
 
-  // Add your social profile links in each icon's data-url attribute.
+  
   const socialNotice = document.getElementById("socialNotice");
 
   document.querySelectorAll(".social-link").forEach(link => {

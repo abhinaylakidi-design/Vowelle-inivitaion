@@ -25,11 +25,11 @@
     try {
       localStorage.setItem(key, value);
     } catch {
-      // Continue without storage.
+      
     }
   };
 
-  // Dark / light mode
+  
   const systemTheme = window.matchMedia(
     "(prefers-color-scheme: dark)"
   );
@@ -78,7 +78,7 @@
     }
   });
 
-  // RTL / LTR mode
+  
   function applyDirection(direction) {
     const rtl = direction === "rtl";
 
@@ -106,7 +106,7 @@
     writeStorage("vowelle-direction", next);
   });
 
-  // Event date
+  
   const dateInput = document.getElementById("eventDate");
   const now = new Date();
 
@@ -114,7 +114,7 @@
     now.getTime() - now.getTimezoneOffset() * 60000
   ).toISOString().split("T")[0];
 
-  // Build enquiry text
+  
   function buildEnquiry() {
     const data = new FormData(form);
 
@@ -147,7 +147,7 @@
     ].join("\n");
   }
 
-  // Validate and prepare enquiry
+  
   form.addEventListener("submit", event => {
     event.preventDefault();
     formMessage.textContent = "";
@@ -180,7 +180,7 @@
     });
   });
 
-  // Download enquiry
+  
   document.getElementById("downloadBtn")
     .addEventListener("click", () => {
       const blob = new Blob([enquiryText], {
@@ -200,7 +200,7 @@
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     });
 
-  // Copy enquiry
+  
   document.getElementById("copyBtn")
     .addEventListener("click", async () => {
       try {
@@ -214,7 +214,7 @@
       }
     });
 
-  // Restart
+  
   document.getElementById("restartBtn")
     .addEventListener("click", () => {
       form.reset();

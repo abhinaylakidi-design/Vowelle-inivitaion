@@ -16,11 +16,11 @@
     try {
       localStorage.setItem(key, value);
     } catch {
-      // Controls work even when browser storage is unavailable.
+      
     }
   };
 
-  /* THEME */
+  
 
   const system = matchMedia("(prefers-color-scheme: dark)");
   let saved = read("vowelle-theme");
@@ -65,7 +65,7 @@
     }
   });
 
-  /* DIRECTION */
+  
 
   function direction(value) {
     root.dir = value;
@@ -97,7 +97,7 @@
     save("vowelle-direction", root.dir);
   });
 
-  /* HEADER HEIGHT */
+  
 
   const header = $("siteHeader");
   const nav = $("navigation");
@@ -123,7 +123,7 @@
     addEventListener("resize", measure);
   }
 
-  /* HOME DROPDOWN */
+  
 
   function dropdown(open, focus = false) {
     if (!drop || !home) return;
@@ -139,7 +139,7 @@
     if (focus) home.focus();
   }
 
-  /* MOBILE NAVIGATION */
+  
 
   function navigation(open, focus = false) {
     nav?.classList.toggle("is-open", open);
@@ -231,7 +231,7 @@
       navigation(false);
     });
 
-  /* SOCIAL LINKS */
+  
 
   document.querySelectorAll(".social-link").forEach(link => {
     let valid = false;
@@ -265,7 +265,7 @@
   }
 })();
 
-/* SECTION REVEALS AND IMAGE FALLBACKS */
+
 
 (() => {
   "use strict";

@@ -1,4 +1,4 @@
-/* Vowelle Contact — standalone JavaScript */
+
 (() => {
     "use strict";
     const init = () => {

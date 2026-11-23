@@ -1,4 +1,4 @@
-/* Vowelle Products — standalone JavaScript */
+
 (() => {
     "use strict";
     const init = () => {
