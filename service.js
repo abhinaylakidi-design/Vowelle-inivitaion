@@ -44,7 +44,7 @@
     );
 
     document.querySelector('meta[name="theme-color"]')
-      ?.setAttribute("content", dark ? "#111111" : "#742C45");
+      ?.setAttribute("content", dark ? "#0a0a0a" : "#742C45");
   }
 
   if (!["light", "dark"].includes(saved)) {
@@ -143,6 +143,7 @@
 
   function navigation(open, focus = false) {
     nav?.classList.toggle("is-open", open);
+    document.body.classList.toggle("menu-open", open);
 
     menu?.setAttribute("aria-expanded", String(open));
     menu?.setAttribute(
@@ -185,7 +186,7 @@
   });
 
   group?.addEventListener("focusout", event => {
-    if (!group.contains(event.relatedTarget)) {
+    if (event.relatedTarget && !group.contains(event.relatedTarget)) {
       dropdown(false);
     }
   });

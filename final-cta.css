@@ -16,6 +16,15 @@
   transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
 }
 
+[data-theme="dark"] .final-section {
+  background:
+    radial-gradient(ellipse at 82% 18%, rgb(116 44 69 / 34%), transparent 48%),
+    linear-gradient(120deg, rgb(116 44 69 / 20%), transparent 54%, rgb(217 155 168 / 10%)),
+    var(--bg-alt);
+  border-color: rgb(217 155 168 / 20%);
+  box-shadow: 0 14px 40px rgb(0 0 0 / 45%);
+}
+
 .final-section::before {
   content: "";
   position: absolute;

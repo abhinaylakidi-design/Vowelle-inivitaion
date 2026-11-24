@@ -18,7 +18,7 @@
             $("themeIcon").setAttribute("href", dark ? "#sun" : "#moon");
             theme.setAttribute("aria-pressed", String(dark));
             theme.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
-            document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#111111" : "#742C45");
+            document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#0a0a0a" : "#742C45");
         };
         applyTheme(preference || (system.matches ? "dark" : "light"));
         theme.addEventListener("click", () => { preference = root.dataset.theme === "dark" ? "light" : "dark"; applyTheme(preference); write("vowelle-theme", preference); });
@@ -39,7 +39,9 @@
             if (focus) home.focus();
         };
         const setMenu = (open, focus = false) => {
-            nav.classList.toggle("is-open", open); menu.setAttribute("aria-expanded", String(open));
+            nav.classList.toggle("is-open", open);
+            document.body.classList.toggle("menu-open", open);
+            menu.setAttribute("aria-expanded", String(open));
             menu.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
             if (!open) setDropdown(false); if (focus) menu.focus();
         };
@@ -50,7 +52,7 @@
             e.preventDefault(); const links = [...dropdown.querySelectorAll("a")];
             links[(links.indexOf(document.activeElement) + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length]?.focus();
         });
-        group.addEventListener("focusout", e => { if (!group.contains(e.relatedTarget)) setDropdown(false); });
+        group.addEventListener("focusout", e => { if (e.relatedTarget && !group.contains(e.relatedTarget)) setDropdown(false); });
         menu.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
         nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
         document.addEventListener("click", e => { if (!group.contains(e.target)) setDropdown(false); if (nav.classList.contains("is-open") && !nav.contains(e.target) && !menu.contains(e.target)) setMenu(false); });

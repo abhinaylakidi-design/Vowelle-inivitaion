@@ -45,7 +45,7 @@
     );
 
     document.querySelector('meta[name="theme-color"]')
-      .setAttribute("content", dark ? "#111111" : "#742C45");
+      ?.setAttribute("content", dark ? "#0a0a0a" : "#742C45");
   }
 
   applyTheme(
@@ -149,13 +149,14 @@
   });
 
   homeGroup.addEventListener("focusout", event => {
-    if (!homeGroup.contains(event.relatedTarget)) {
+    if (event.relatedTarget && !homeGroup.contains(event.relatedTarget)) {
       setDropdown(false);
     }
   });
 
   function setMenu(open, returnFocus = false) {
     navigation.classList.toggle("is-open", open);
+    document.body.classList.toggle("menu-open", open);
 
     menuButton.setAttribute("aria-expanded", String(open));
     menuButton.setAttribute(

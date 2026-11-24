@@ -53,7 +53,7 @@
     const meta = document.querySelector('meta[name="theme-color"]');
 
     if (meta) {
-      meta.content = dark ? "#111111" : "#742C45";
+      meta.content = dark ? "#0a0a0a" : "#742C45";
     }
   }
 
